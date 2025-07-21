@@ -1,0 +1,66 @@
+/* Estilos para a barra de navegação fixa */
+.elementor-element-64374584,
+.barra-fixa-inferior {
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 9999 !important; /* Valor mais alto para garantir que fique acima de todos os elementos */
+    width: 100% !important;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+}
+
+/* Garante que a barra de navegação permaneça visível mesmo com rolagem */
+.elementor-element-64374584.elementor-sticky--effects,
+.barra-fixa-inferior.elementor-sticky--effects {
+    transform: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    animation: none !important;
+    bottom: 0 !important;
+    visibility: visible !important;
+}
+
+/* Melhora a visualização dos botões na barra de navegação */
+.barra-fixa-inferior a.elementor-button {
+    transition: background-color 0.3s ease;
+}
+
+.barra-fixa-inferior a.elementor-button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Espaçamento para evitar que o conteúdo seja coberto pela barra fixa */
+body {
+    padding-bottom: 70px !important;
+    margin-bottom: 0 !important;
+}
+
+/* Estilo para quando a barra está com scroll */
+html.has-scroll .barra-fixa-inferior {
+    box-shadow: 0px -4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Ajuste para mobile */
+@media (max-width: 767px) {
+    body {
+        padding-bottom: 80px !important;
+    }
+    
+    /* Aumenta tamanho dos botões para melhor toque em dispositivos móveis */
+    .barra-fixa-inferior a.elementor-button {
+        padding: 10px 15px !important;
+    }
+}
+
+/* Suporte para navegadores específicos */
+@supports (-webkit-touch-callout: none) {
+    /* iOS específico */
+    body {
+        padding-bottom: 90px !important; /* iOS normalmente precisa de mais espaço devido à barra inferior do Safari */
+    }
+} 
