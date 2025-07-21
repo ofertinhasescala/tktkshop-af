@@ -6,7 +6,8 @@
   "scripts": {
     "start": "npx http-server tema-tik-tok-shop -p 3000 -o",
     "dev": "npx http-server tema-tik-tok-shop -p 3000 -o -c-1",
-    "serve": "python3 -m http.server 8000 --directory tema-tik-tok-shop"
+    "serve": "python3 -m http.server 8000 --directory tema-tik-tok-shop",
+    "build": "echo 'No build step needed'"
   },
   "keywords": ["static", "website", "elementor"],
   "author": "",
