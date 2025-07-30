@@ -1,0 +1,15 @@
+{
+  "name": "tema-tik-tok-shop",
+  "version": "1.0.0",
+  "description": "Site estático do tema TikTok Show",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx http-server tema-tik-tok-shop -p 3000 -o",
+    "dev": "npx http-server tema-tik-tok-shop -p 3000 -o -c-1",
+    "serve": "python3 -m http.server 8000 --directory tema-tik-tok-shop",
+    "build": "echo 'No build step needed'"
+  },
+  "keywords": ["static", "website", "elementor"],
+  "author": "",
+  "license": "ISC"
+}
