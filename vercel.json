@@ -6,6 +6,10 @@
       "use": "@vercel/static"
     },
     {
+      "src": "**/*.html",
+      "use": "@vercel/static"
+    },
+    {
       "src": "css/**",
       "use": "@vercel/static"
     },
@@ -20,9 +24,33 @@
     {
       "src": "fonts/**",
       "use": "@vercel/static"
+    },
+    {
+      "src": "cashback/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "icms/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "tenf/**",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
+    {
+      "src": "/cashback",
+      "dest": "/cashback/index.html"
+    },
+    {
+      "src": "/icms",
+      "dest": "/icms/index.html"
+    },
+    {
+      "src": "/tenf",
+      "dest": "/tenf/index.html"
+    },
     {
       "src": "/(.*)",
       "dest": "/$1"
