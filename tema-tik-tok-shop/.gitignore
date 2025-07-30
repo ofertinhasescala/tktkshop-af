@@ -1,0 +1,33 @@
+# Arquivos do sistema
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Arquivos temporários
+*.tmp
+*.temp
+*.log
+
+# Pasta de imagens não utilizadas
+images-unused/
+
+# Arquivos de backup
+*.bak
+*.backup
+*~
+
+# Node modules (se houver)
+node_modules/
+
+# Arquivos de IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Arquivos de cache
+*.cache

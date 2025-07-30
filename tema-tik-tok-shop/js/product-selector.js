@@ -5,7 +5,7 @@ class StateManager {
     constructor() {
         this.state = {
             selectedColor: 'azul', 
-            selectedCarreta: 'coca',
+            selectedCarreta: 'coca', // Estado inicial deve ser 'coca' como no HTML
             isProcessing: false,
             lockTimeout: null,
             lastUpdate: new Date()
@@ -48,7 +48,7 @@ class StateManager {
             try {
                 callback(key, value, this.state);
             } catch (error) {
-                console.error('Error in state listener:', error);
+                console.error('Erro no listener de estado:', error);
             }
         });
     }
@@ -100,13 +100,13 @@ class SelectionController {
     handleSelection(option) {
         // Validar entrada
         if (!this.validateSelection(option)) {
-            console.warn(`Invalid ${this.type} selection:`, option);
+            console.warn(`Seleção de ${this.type} inválida:`, option);
             return false;
         }
 
         // Tentar adquirir lock
         if (!this.stateManager.acquireLock()) {
-            console.log(`Selection in progress, ignoring ${this.type} selection:`, option);
+            console.log(`Seleção em andamento, ignorando seleção de ${this.type}:`, option);
             return false;
         }
 
@@ -133,7 +133,7 @@ class SelectionController {
 
             return true;
         } catch (error) {
-            console.error(`Error handling ${this.type} selection:`, error);
+            console.error(`Erro ao manipular seleção de ${this.type}:`, error);
             return false;
         } finally {
             // Liberar lock após pequeno delay
@@ -158,7 +158,7 @@ class SelectionController {
         try {
             const container = document.querySelector(this.containerSelector);
             if (!container) {
-                console.warn(`Container not found for ${this.type}:`, this.containerSelector);
+                console.warn(`Container não encontrado para ${this.type}:`, this.containerSelector);
                 return;
             }
 
@@ -187,6 +187,9 @@ class SelectionController {
                     setTimeout(() => {
                         buttonContainer.style.animation = 'pulse 0.3s ease-in-out';
                     }, 10);
+                    
+                    // Adicionar efeito de ripple
+                    this.addRippleEffect(selectedButton);
                 }
             }
 
@@ -209,8 +212,28 @@ class SelectionController {
                 }
             }
         } catch (error) {
-            console.error(`Error updating visual state for ${this.type}:`, error);
+            console.error(`Erro ao atualizar estado visual para ${this.type}:`, error);
         }
+    }
+    
+    /**
+     * Adiciona efeito de ripple aos botões
+     */
+    addRippleEffect(button) {
+        // Criar elemento de ripple
+        const ripple = document.createElement('span');
+        ripple.className = 'ripple-effect';
+        button.appendChild(ripple);
+        
+        // Aplicar posicionamento e animação
+        ripple.style.width = ripple.style.height = Math.max(button.offsetWidth, button.offsetHeight) + 'px';
+        ripple.style.left = '0px';
+        ripple.style.top = '0px';
+        
+        // Remover após animação
+        setTimeout(() => {
+            ripple.remove();
+        }, 600);
     }
 
     /**
@@ -248,7 +271,7 @@ class ImageManager {
 
         this.carretaImages = {
             'coca': 'https://centraldacompra.shop/cdn/shop/files/ChatGPT_Image_25_de_jun._de_2025_01_07_21_1024x.png?v=1752783303',
-            'sedex': 'https://centraldacompra.shop/cdn/shop/files/5_1080x.png?v=1752783302',
+            'sedex': 'https://elranchobrasil.com/cdn/shop/files/5_1000x.png?v=1752880379',
             'heineken': 'https://centraldacompra.shop/cdn/shop/files/ChatGPT_Image_26_de_jun._de_2025_21_36_04_1024x.png?v=1752783302',
             'skol': 'https://centraldacompra.shop/cdn/shop/files/ChatGPT_Image_26_de_jun._de_2025_21_42_41_1_1024x.png?v=1752783304',
             'casas': 'https://centraldacompra.shop/cdn/shop/files/ChatGPT_Image_26_de_jun._de_2025_21_55_27_1024x.png?v=1752783303'
@@ -269,7 +292,7 @@ class ImageManager {
                 this.updateCarretaImage(option);
             }
         } catch (error) {
-            console.error(`Error updating ${type} image:`, error);
+            console.error(`Erro ao atualizar imagem ${type}:`, error);
         }
     }
 
@@ -291,10 +314,20 @@ class ImageManager {
                 mainImage.parentNode.insertBefore(container, mainImage);
                 container.appendChild(mainImage);
             }
-
-            mainImage.src = imageUrl;
-            mainImage.srcset = '';
-            mainImage.alt = 'Caminhão ' + color.charAt(0).toUpperCase() + color.slice(1);
+            
+            // Aplicar efeito de transição
+            mainImage.style.opacity = "0.7";
+            
+            setTimeout(() => {
+                mainImage.src = imageUrl;
+                mainImage.srcset = '';
+                mainImage.alt = 'Caminhão ' + color.charAt(0).toUpperCase() + color.slice(1);
+                
+                // Restaurar opacidade após carregar
+                mainImage.onload = () => {
+                    mainImage.style.opacity = "1";
+                };
+            }, 150);
         }
     }
 
@@ -302,8 +335,29 @@ class ImageManager {
      * Atualiza imagem de pré-visualização da carreta
      */
     updateCarretaImage(carreta) {
-        const carretaImage = document.getElementById('carreta-preview-image');
+        let carretaImage = document.getElementById('carreta-preview-image');
         const imageUrl = this.carretaImages[carreta];
+
+        // Se a imagem não existir, criar o elemento
+        if (!carretaImage) {
+            // Encontrar o container da carreta
+            const carretaContainer = document.querySelector('[data-id="7516f890"]');
+            if (carretaContainer) {
+                // Criar o elemento de imagem
+                const imageContainer = document.createElement('div');
+                imageContainer.className = 'elementor-widget-container';
+                
+                carretaImage = document.createElement('img');
+                carretaImage.id = 'carreta-preview-image';
+                carretaImage.width = '180';
+                carretaImage.height = '180';
+                carretaImage.className = 'attachment-medium size-medium';
+                carretaImage.alt = 'Carreta ' + carreta.charAt(0).toUpperCase() + carreta.slice(1);
+                
+                imageContainer.appendChild(carretaImage);
+                carretaContainer.appendChild(imageContainer);
+            }
+        }
 
         if (carretaImage && imageUrl) {
             // Verificar se a imagem já está em um container
@@ -313,13 +367,25 @@ class ImageManager {
             if (!container) {
                 container = document.createElement('div');
                 container.className = 'carreta-preview-container';
-                carretaImage.parentNode.insertBefore(container, carretaImage);
-                container.appendChild(carretaImage);
+                if (carretaImage.parentNode) {
+                    carretaImage.parentNode.insertBefore(container, carretaImage);
+                    container.appendChild(carretaImage);
+                }
             }
-
-            carretaImage.src = imageUrl;
-            carretaImage.srcset = '';
-            carretaImage.alt = 'Carreta ' + carreta.charAt(0).toUpperCase() + carreta.slice(1);
+            
+            // Aplicar efeito de transição
+            carretaImage.style.opacity = "0.7";
+            
+            setTimeout(() => {
+                carretaImage.src = imageUrl;
+                carretaImage.srcset = '';
+                carretaImage.alt = 'Carreta ' + carreta.charAt(0).toUpperCase() + carreta.slice(1);
+                
+                // Restaurar opacidade após carregar
+                carretaImage.onload = () => {
+                    carretaImage.style.opacity = "1";
+                };
+            }, 150);
         }
     }
 
@@ -333,7 +399,7 @@ class ImageManager {
             if (!this.imageCache.has(url)) {
                 const img = new Image();
                 img.onload = () => this.imageCache.set(url, true);
-                img.onerror = () => console.warn('Failed to preload image:', url);
+                img.onerror = () => console.warn('Falha ao pré-carregar imagem:', url);
                 img.src = url;
             }
         });
@@ -363,6 +429,10 @@ class ProductSelector {
         this.debounceTimeout = null;
         this.lastClickTime = 0;
 
+        // Definir os estados iniciais
+        this.stateManager.updateState('selectedColor', 'azul');
+        this.stateManager.updateState('selectedCarreta', 'coca');
+
         this.init();
     }
 
@@ -385,6 +455,39 @@ class ProductSelector {
                 this.imageManager.updateImage('carreta', value);
             }
         });
+        
+        // Adicionar estilo para efeito de ripple
+        this.addRippleStyle();
+    }
+    
+    /**
+     * Adiciona estilo CSS para o efeito de ripple
+     */
+    addRippleStyle() {
+        const style = document.createElement('style');
+        style.textContent = `
+            .ripple-effect {
+                position: absolute;
+                border-radius: 50%;
+                background-color: rgba(255, 71, 87, 0.2);
+                transform: scale(0);
+                animation: ripple 0.6s linear;
+                pointer-events: none;
+            }
+            
+            @keyframes ripple {
+                to {
+                    transform: scale(2);
+                    opacity: 0;
+                }
+            }
+            
+            .elementor-widget-button a {
+                position: relative;
+                overflow: hidden;
+            }
+        `;
+        document.head.appendChild(style);
     }
 
     /**
@@ -458,7 +561,7 @@ class ProductSelector {
         const match = onclickAttr.match(/'([^']+)'/);
 
         if (!match) {
-            console.warn('Could not extract option from onclick:', onclickAttr);
+            console.warn('Não foi possível extrair a opção do onclick:', onclickAttr);
             return;
         }
 
@@ -478,8 +581,42 @@ class ProductSelector {
     initializeDefaults() {
         // Pequeno delay para garantir que o DOM esteja pronto
         setTimeout(() => {
+            // Selecionar azul como cor padrão (como na imagem de referência)
             this.colorController.handleSelection('azul');
+            
+            // Selecionar coca como carreta padrão (como na imagem de referência)
             this.carretaController.handleSelection('coca');
+            
+            // Adicionar classes para indicar visualmente as seleções iniciais
+            const colorContainer = document.querySelector('[data-id="571a5629"]');
+            if (colorContainer) {
+                const azulButton = colorContainer.querySelector('[onclick*="changeProductImage(\'azul\')"]');
+                if (azulButton) {
+                    const buttonWrapper = azulButton.closest('.elementor-widget-button');
+                    if (buttonWrapper) {
+                        // Remover de todos primeiro
+                        const allButtons = colorContainer.querySelectorAll('.elementor-widget-button');
+                        allButtons.forEach(btn => btn.classList.remove('elementor-widget-active'));
+                        // Adicionar ao botão azul
+                        buttonWrapper.classList.add('elementor-widget-active');
+                    }
+                }
+            }
+            
+            const carretaContainer = document.querySelector('[data-id="571a5630"]');
+            if (carretaContainer) {
+                const cocaButton = carretaContainer.querySelector('[onclick*="changeCarretaImage(\'coca\')"]');
+                if (cocaButton) {
+                    const buttonWrapper = cocaButton.closest('.elementor-widget-button');
+                    if (buttonWrapper) {
+                        // Remover de todos primeiro
+                        const allButtons = carretaContainer.querySelectorAll('.elementor-widget-button');
+                        allButtons.forEach(btn => btn.classList.remove('elementor-widget-active'));
+                        // Adicionar ao botão coca
+                        buttonWrapper.classList.add('elementor-widget-active');
+                    }
+                }
+            }
         }, 100);
     }
 
