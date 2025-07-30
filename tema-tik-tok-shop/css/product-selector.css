@@ -93,14 +93,6 @@
     transition: opacity 0.3s ease-in-out !important;
     border-radius: 4px !important;
     background-color: #ffffff !important;
-    /* Adicionado para melhorar qualidade no mobile */
-    image-rendering: -webkit-optimize-contrast !important;
-    image-rendering: crisp-edges !important;
-    -webkit-backface-visibility: hidden !important;
-    backface-visibility: hidden !important;
-    /* Força hardware acceleration */
-    transform: translateZ(0) !important;
-    will-change: transform !important;
 }
 
 /* Estilo para o container da imagem de pré-visualização da brinde */
@@ -141,91 +133,28 @@
     transition: opacity 0.3s ease-in-out !important;
     border-radius: 4px !important;
     background-color: #ffffff !important;
-    /* Melhorias para qualidade */
-    image-rendering: -webkit-optimize-contrast !important;
-    image-rendering: crisp-edges !important;
-    -webkit-backface-visibility: hidden !important;
-    backface-visibility: hidden !important;
-    transform: translateZ(0) !important;
-    will-change: transform !important;
 }
 
 /* Estilos responsivos para telas menores */
 @media (max-width: 768px) {
     #brinde-preview-image,
     #main-product-image {
-        max-width: 280px !important;
-        max-height: 280px !important;
-        /* Melhor qualidade para tablets */
-        image-rendering: auto !important;
-        -webkit-transform: translateZ(0) !important;
-        transform: translateZ(0) !important;
+        max-width: 250px !important;
+        max-height: 250px !important;
     }
 }
 
 @media (max-width: 480px) {
     #brinde-preview-image,
     #main-product-image {
-        max-width: 240px !important;
-        max-height: 240px !important;
-        /* Otimizações específicas para mobile */
-        image-rendering: auto !important;
-        -webkit-image-rendering: -webkit-optimize-contrast !important;
-        /* Força resolução alta em retina displays */
-        -webkit-transform: translate3d(0, 0, 0) !important;
-        transform: translate3d(0, 0, 0) !important;
-        /* Remove blur em webkit */
-        -webkit-font-smoothing: antialiased !important;
-        -moz-osx-font-smoothing: grayscale !important;
-    }
-    
-    /* Container dos brindes no mobile */
-    .brinde-preview-container,
-    .main-product-container {
-        padding: 5px !important;
-        min-height: 250px !important;
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-    }
-}
-
-/* Correções específicas para high-DPI displays (Retina) */
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-       only screen and (min--moz-device-pixel-ratio: 2),
-       only screen and (-o-min-device-pixel-ratio: 2/1),
-       only screen and (min-device-pixel-ratio: 2),
-       only screen and (min-resolution: 192dpi),
-       only screen and (min-resolution: 2dppx) {
-    
-    #brinde-preview-image,
-    #main-product-image {
-        /* Força qualidade máxima em displays retina */
-        image-rendering: -webkit-optimize-contrast !important;
-        image-rendering: optimize-contrast !important;
-        image-rendering: crisp-edges !important;
-        -ms-interpolation-mode: nearest-neighbor !important;
-        /* Hardware acceleration */
-        -webkit-transform: translateZ(0) !important;
-        transform: translateZ(0) !important;
-        -webkit-backface-visibility: hidden !important;
-        backface-visibility: hidden !important;
-        will-change: transform !important;
+        max-width: 200px !important;
+        max-height: 200px !important;
     }
 }
 
 /* Estilo para imagens durante carregamento */
 .image-loading {
     opacity: 0.7;
-    filter: blur(2px);
-    transition: all 0.3s ease;
-}
-
-/* Estado da imagem quando carregada */
-.image-loaded {
-    opacity: 1;
-    filter: none;
-    transition: all 0.3s ease;
 }
 
 /* Animação de transição para seleções */
