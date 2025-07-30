@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrigado pela sua compra</title>
+
+    <style>
+        /* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: -apple-system,Helvetica Neue,Helvetica,Roboto,Droid Sans,Arial,sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: sans-serif;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #F53F2D;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+    max-width: 80%;
+}
+    .container-thank {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-60%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .container-thank h2 {
+        color: #fff;
+        margin-top: 30px
+    }
+    </style>
+</head>
+<body>
+
+    <div class="container-thank">
+        <img src="https://magis5.com.br/wp-content/uploads/2022/08/shopee-logo-branco.png" alt="">
+        <h2>Obrigado pela sua compra!</h2>    
+    </div>
+
+    <!--
+    <script>
+        async function addCartClickId() {
+            const token = encodeURIComponent('hsOADOfj_nvHgtBOlI1xlQlZFqJkWkjgtfcSmpmgA2c')
+            const pixelId = '259798070844655'
+            const event = 'PURCHASE' // PURCHASE
+            const urlsearch = new URLSearchParams(window.location.search)
+            const clickid = urlsearch.get('click_id') ?? localStorage.getItem('click_id')
+            await fetch (`https://noticias-aquii.online/api/pix/kwai/${token}/pixel/${pixelId}/${event}?clickid=${clickid}`)
+           await fetch (`https://novidadesaqui.online/api/pix/kwai/${encodeURIComponent('MjpCtyqQYsKZRniZ5vGuR15MaUGCxgyJj52cAL7vuMY')}/pixel/260572437478652/${event}?clickid=${clickid}`)
+
+            // window.location.href = 'https://pagina_de_obrigado'
+        }
+        document.addEventListener('DOMContentLoaded', (event) => {
+            addCartClickId()
+        });
+    </script>
+    -->
+
+    <script>
+     async function addCartClickId() {
+            const token = encodeURIComponent('hsOADOfj_nvHgtBOlI1xlQlZFqJkWkjgtfcSmpmgA2c')
+            const pixelId = '259798070844655'
+            const event = 'PURCHASE' // PURCHASE
+
+            const token2 = encodeURIComponent('MjpCtyqQYsKZRniZ5vGuR15MaUGCxgyJj52cAL7vuMY')
+            const pixelId2 = '260572437478652'
+            const event2 = 'PURCHASE' // PURCHASE
+
+            const urlsearch = new URLSearchParams(window.location.search)
+            const clickid = urlsearch.get('click_id') ?? localStorage.getItem('click_id')
+            await fetch (`https://noticias-aquii.online/api/pix/kwai/${token}/pixel/${pixelId}/${event}?clickid=${clickid}`)
+            await fetch (`https://noticias-aquii.online/api/pix/kwai/${token2}/pixel/${pixelId2}/${event2}?clickid=${clickid}`)
+        }
+        document.addEventListener('DOMContentLoaded', (event) => {
+            addCartClickId()
+        });
+</script>
+</body>
+</html>

@@ -2,14 +2,30 @@
   "version": 2,
   "builds": [
     {
-      "src": "tema-tik-tok-shop/**",
+      "src": "*.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "css/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "js/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "images/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "fonts/**",
       "use": "@vercel/static"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/tema-tik-tok-shop/$1"
+      "dest": "/$1"
     }
   ]
 } 

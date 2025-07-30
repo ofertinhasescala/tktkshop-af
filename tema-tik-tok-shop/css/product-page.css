@@ -269,7 +269,7 @@
 
 /* ===== SELECTION SECTIONS ===== */
 .color-selection-section,
-.carreta-selection-section {
+.brinde-selection-section {
     margin-bottom: 35px;
     padding: 20px;
     background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
@@ -414,8 +414,8 @@
     display: inline-block;
 }
 
-/* Preview da carreta */
-.carreta-preview {
+/* Preview do brinde */
+.brinde-preview {
     text-align: center;
     margin-bottom: 25px;
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
@@ -446,18 +446,18 @@
     background: radial-gradient(circle at center, #ffffff 0%, #f8f9fa 100%);
 }
 
-.carreta-image {
+.brinde-image {
     max-width: 200px;
     height: auto;
     transition: all 0.4s ease;
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
 }
 
-.carreta-image:hover {
+.brinde-image:hover {
     transform: scale(1.05) rotate(1deg);
 }
 
-.carreta-image.image-loading {
+.brinde-image.image-loading {
     opacity: 0.6;
     transform: scale(0.95);
     filter: blur(1px);
@@ -465,19 +465,19 @@
 
 
 
-/* Opções de carreta */
-.carreta-options {
+/* Opções de brinde */
+.brinde-options {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
     gap: 10px;
     margin-bottom: 15px;
 }
 
-.carreta-options .elementor-widget {
+.brinde-options .elementor-widget {
     flex: 0 0 auto;
 }
 
-.carreta-button {
+.brinde-button {
     background-color: white;
     border: 2px solid #e0e0e0;
     color: #495057;
@@ -497,14 +497,14 @@
     text-align: center;
 }
 
-.carreta-button:hover {
+.brinde-button:hover {
     border-color: #ff4757;
     color: #ff4757;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(255, 71, 87, 0.2);
 }
 
-.elementor-widget-active .carreta-button {
+.elementor-widget-active .brinde-button {
     background: linear-gradient(135deg, #ff4757 0%, #ff3742 100%);
     border-color: #ff4757;
     color: white;
@@ -512,7 +512,7 @@
     transform: translateY(-1px);
 }
 
-.elementor-widget-active .carreta-button:hover {
+.elementor-widget-active .brinde-button:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(255, 71, 87, 0.5);
 }
@@ -734,12 +734,12 @@
 }
 
 .main-product-image,
-.carreta-image {
+.brinde-image {
     will-change: transform, opacity;
 }
 
 .color-button,
-.carreta-button,
+.brinde-button,
 .buy-now-button {
     will-change: transform;
 }
@@ -786,7 +786,7 @@
     }
 
     .color-selection-section,
-    .carreta-selection-section {
+    .brinde-selection-section {
         page-break-inside: avoid;
     }
 }
@@ -816,7 +816,7 @@
     }
 
     .main-product-image:hover,
-    .carreta-image:hover {
+    .brinde-image:hover {
         transform: none;
     }
 
@@ -855,14 +855,14 @@
     animation: spin-color 0.8s linear infinite;
 }
 
-/* Efeito de loading para mudança de carreta */
-.carreta-options .elementor-widget.processing .carreta-button {
+/* Efeito de loading para mudança de brinde */
+.brinde-options .elementor-widget.processing .brinde-button {
     opacity: 0.7;
     transform: scale(0.98);
     pointer-events: none;
 }
 
-.carreta-options .elementor-widget.processing .brand-indicator {
+.brinde-options .elementor-widget.processing .brand-indicator {
     animation: spin-brand 0.8s linear infinite;
 }
 
@@ -971,7 +971,7 @@
 
 
     .color-selection-section,
-    .carreta-selection-section {
+    .brinde-selection-section {
         padding: 15px;
         margin-bottom: 25px;
     }
@@ -990,7 +990,7 @@
         gap: 8px;
     }
 
-    .carreta-preview {
+    .brinde-preview {
         margin-bottom: 20px;
     }
 
@@ -1003,11 +1003,11 @@
         padding: 20px;
     }
 
-    .carreta-image {
+    .brinde-image {
         max-width: 160px;
     }
 
-    .carreta-options {
+    .brinde-options {
         grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
         gap: 8px;
     }
@@ -1018,7 +1018,7 @@
         gap: 8px;
     }
 
-    .carreta-button {
+    .brinde-button {
         padding: 10px 8px;
         font-size: 11px;
         gap: 4px;
@@ -1052,7 +1052,7 @@
 
 /* ===== ACCESSIBILITY ===== */
 .color-button:focus,
-.carreta-button:focus,
+.brinde-button:focus,
 .buy-now-button:focus {
     outline: 2px solid #ff4757;
     outline-offset: 2px;
@@ -1068,7 +1068,7 @@
     opacity: 0.7;
 }
 
-.carreta-image.image-loading {
+.brinde-image.image-loading {
     opacity: 0.6;
     transform: scale(0.95);
     filter: blur(1px);
@@ -1160,17 +1160,17 @@
 
 /* Efeito de seleção com animação */
 .color-options .elementor-widget,
-.carreta-options .elementor-widget {
+.brinde-options .elementor-widget {
     transition: all 0.3s ease;
 }
 
 .color-options .elementor-widget:hover,
-.carreta-options .elementor-widget:hover {
+.brinde-options .elementor-widget:hover {
     transform: scale(1.02);
 }
 
 .color-options .elementor-widget.elementor-widget-active,
-.carreta-options .elementor-widget.elementor-widget-active {
+.brinde-options .elementor-widget.elementor-widget-active {
     animation: selected-bounce 0.5s ease-out;
 }
 
@@ -1199,14 +1199,14 @@
     animation: spin-color 0.8s linear infinite;
 }
 
-/* Efeito de loading para mudança de carreta */
-.carreta-options .elementor-widget.processing .carreta-button {
+/* Efeito de loading para mudança de brinde */
+.brinde-options .elementor-widget.processing .brinde-button {
     opacity: 0.7;
     transform: scale(0.98);
     pointer-events: none;
 }
 
-.carreta-options .elementor-widget.processing .brand-indicator {
+.brinde-options .elementor-widget.processing .brand-indicator {
     animation: spin-brand 0.8s linear infinite;
 }
 
@@ -1258,8 +1258,8 @@
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* Indicador de carreta selecionada */
-.elementor-widget-active .carreta-button::after {
+/* Indicador de brinde selecionada */
+.elementor-widget-active .brinde-button::after {
     content: '✓';
     position: absolute;
     top: 4px;
@@ -1279,14 +1279,14 @@
 
 /* Melhorias de acessibilidade */
 .color-button:focus,
-.carreta-button:focus {
+.brinde-button:focus {
     outline: 3px solid #ff4757;
     outline-offset: 2px;
     border-radius: 12px;
 }
 
-/* Efeito shimmer para botões de carreta */
-.carreta-button::before {
+/* Efeito shimmer para botões de brinde */
+.brinde-button::before {
     content: '';
     position: absolute;
     top: 0;
@@ -1297,18 +1297,31 @@
     transition: left 0.5s ease;
 }
 
-.elementor-widget-active .carreta-button::before {
+/* Botões desabilitados */
+.botao-desabilitado {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.botao-desabilitado .brinde-button {
+    background-color: #F2F2F2 !important;
+    color: #CACFD8 !important;
+    border-color: #F2F2F2 !important;
+    cursor: not-allowed;
+}
+
+.elementor-widget-active .brinde-button::before {
     left: 100%;
 }
 
 /* Efeito de preview atualizado */
-.carreta-preview.updating {
+.brinde-preview.updating {
     transform: scale(0.98);
     opacity: 0.8;
     transition: all 0.3s ease;
 }
 
-.carreta-preview.updating .carreta-image {
+.brinde-preview.updating .brinde-image {
     filter: blur(2px) drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
 }
 

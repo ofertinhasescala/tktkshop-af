@@ -8,7 +8,7 @@
     justify-content: flex-start !important;
 }
 
-/* Forçar layout horizontal para os botões das carretas */
+/* Forçar layout horizontal para os botões das brindes */
 .elementor-element[data-id="571a5630"] {
     display: flex !important;
     flex-direction: row !important;
@@ -16,7 +16,7 @@
     justify-content: flex-start !important;
 }
 
-/* Estilo base para TODOS os botões - Cores e Carretas */
+/* Estilo base para TODOS os botões - Cores e Brindes */
 .elementor-element[data-id="571a5630"] .elementor-button,
 .elementor-element[data-id="571a5629"] .elementor-button {
     background-color: #f0f0f0 !important; /* Estado padrão: fundo cinza claro */
@@ -81,8 +81,8 @@
     margin: 0 4px 8px 0 !important;
 }
 
-/* Estilo para a imagem de pré-visualização da carreta */
-#carreta-preview-image {
+/* Estilo para a imagem de pré-visualização da brinde */
+#brinde-preview-image {
     width: 100% !important;
     height: auto !important;
     max-width: 300px !important;
@@ -95,8 +95,8 @@
     background-color: #ffffff !important;
 }
 
-/* Estilo para o container da imagem de pré-visualização da carreta */
-.carreta-preview-container {
+/* Estilo para o container da imagem de pré-visualização da brinde */
+.brinde-preview-container {
     width: 100% !important;
     padding: 10px !important;
     display: flex !important;
@@ -137,7 +137,7 @@
 
 /* Estilos responsivos para telas menores */
 @media (max-width: 768px) {
-    #carreta-preview-image,
+    #brinde-preview-image,
     #main-product-image {
         max-width: 250px !important;
         max-height: 250px !important;
@@ -145,7 +145,7 @@
 }
 
 @media (max-width: 480px) {
-    #carreta-preview-image,
+    #brinde-preview-image,
     #main-product-image {
         max-width: 200px !important;
         max-height: 200px !important;

@@ -1,0 +1,307 @@
+[01-Apr-2025 10:01:34 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php:307
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 307
+[01-Apr-2025 10:01:34 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php:307
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 307
+[01-Apr-2025 10:02:24 America/Fortaleza] PHP Warning:  Undefined array key "name" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 309
+[01-Apr-2025 10:02:24 America/Fortaleza] PHP Warning:  Undefined array key "options" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 313
+[01-Apr-2025 10:02:24 America/Fortaleza] PHP Warning:  foreach() argument must be of type array|object, null given in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 313
+[01-Apr-2025 10:02:25 America/Fortaleza] PHP Warning:  Undefined array key "name" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 309
+[01-Apr-2025 10:02:25 America/Fortaleza] PHP Warning:  Undefined array key "options" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 313
+[01-Apr-2025 10:02:25 America/Fortaleza] PHP Warning:  foreach() argument must be of type array|object, null given in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 313
+[01-Apr-2025 10:04:14 America/Fortaleza] PHP Warning:  Undefined array key "name" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 309
+[01-Apr-2025 10:04:14 America/Fortaleza] PHP Warning:  Undefined array key "options" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 313
+[01-Apr-2025 10:04:14 America/Fortaleza] PHP Warning:  foreach() argument must be of type array|object, null given in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 313
+[01-Apr-2025 10:04:15 America/Fortaleza] PHP Warning:  Undefined array key "name" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 309
+[01-Apr-2025 10:04:15 America/Fortaleza] PHP Warning:  Undefined array key "options" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 313
+[01-Apr-2025 10:04:15 America/Fortaleza] PHP Warning:  foreach() argument must be of type array|object, null given in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 313
+[01-Apr-2025 10:09:09 America/Fortaleza] PHP Warning:  Undefined array key "name" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 309
+[01-Apr-2025 10:09:09 America/Fortaleza] PHP Warning:  Undefined array key "options" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 313
+[01-Apr-2025 10:09:09 America/Fortaleza] PHP Warning:  foreach() argument must be of type array|object, null given in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 313
+[01-Apr-2025 10:09:10 America/Fortaleza] PHP Warning:  Undefined array key "name" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 309
+[01-Apr-2025 10:09:10 America/Fortaleza] PHP Warning:  Undefined array key "options" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 313
+[01-Apr-2025 10:09:10 America/Fortaleza] PHP Warning:  foreach() argument must be of type array|object, null given in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 313
+[01-Apr-2025 10:14:17 America/Fortaleza] PHP Warning:  Undefined array key "name" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 320
+[01-Apr-2025 10:14:17 America/Fortaleza] PHP Warning:  Undefined array key "options" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 324
+[01-Apr-2025 10:14:17 America/Fortaleza] PHP Warning:  foreach() argument must be of type array|object, null given in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 324
+[01-Apr-2025 10:14:17 America/Fortaleza] PHP Warning:  Undefined array key "name" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 320
+[01-Apr-2025 10:14:17 America/Fortaleza] PHP Warning:  Undefined array key "options" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 324
+[01-Apr-2025 10:14:17 America/Fortaleza] PHP Warning:  foreach() argument must be of type array|object, null given in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 324
+[01-Apr-2025 10:14:17 America/Fortaleza] PHP Warning:  Undefined array key "name" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 320
+[01-Apr-2025 10:14:17 America/Fortaleza] PHP Warning:  Undefined array key "options" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 324
+[01-Apr-2025 10:14:17 America/Fortaleza] PHP Warning:  foreach() argument must be of type array|object, null given in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 324
+[01-Apr-2025 10:14:18 America/Fortaleza] PHP Warning:  Undefined array key "name" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 320
+[01-Apr-2025 10:14:18 America/Fortaleza] PHP Warning:  Undefined array key "options" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 324
+[01-Apr-2025 10:14:18 America/Fortaleza] PHP Warning:  foreach() argument must be of type array|object, null given in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 324
+[01-Apr-2025 10:14:18 America/Fortaleza] PHP Warning:  Undefined array key "name" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 320
+[01-Apr-2025 10:14:18 America/Fortaleza] PHP Warning:  Undefined array key "options" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 324
+[01-Apr-2025 10:14:18 America/Fortaleza] PHP Warning:  foreach() argument must be of type array|object, null given in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 324
+[01-Apr-2025 10:14:18 America/Fortaleza] PHP Warning:  Undefined array key "name" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 320
+[01-Apr-2025 10:14:18 America/Fortaleza] PHP Warning:  Undefined array key "options" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 324
+[01-Apr-2025 10:14:18 America/Fortaleza] PHP Warning:  foreach() argument must be of type array|object, null given in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 324
+[01-Apr-2025 10:16:30 America/Fortaleza] PHP Warning:  Undefined array key "name" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 320
+[01-Apr-2025 10:16:30 America/Fortaleza] PHP Warning:  Undefined array key "options" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 324
+[01-Apr-2025 10:16:30 America/Fortaleza] PHP Warning:  foreach() argument must be of type array|object, null given in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 324
+[01-Apr-2025 10:16:30 America/Fortaleza] PHP Warning:  Undefined array key "name" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 320
+[01-Apr-2025 10:16:30 America/Fortaleza] PHP Warning:  Undefined array key "options" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 324
+[01-Apr-2025 10:16:30 America/Fortaleza] PHP Warning:  foreach() argument must be of type array|object, null given in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 324
+[01-Apr-2025 10:16:30 America/Fortaleza] PHP Warning:  Undefined array key "name" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 320
+[01-Apr-2025 10:16:30 America/Fortaleza] PHP Warning:  Undefined array key "options" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 324
+[01-Apr-2025 10:16:30 America/Fortaleza] PHP Warning:  foreach() argument must be of type array|object, null given in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 324
+[01-Apr-2025 10:16:32 America/Fortaleza] PHP Warning:  Undefined array key "name" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 320
+[01-Apr-2025 10:16:32 America/Fortaleza] PHP Warning:  Undefined array key "options" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 324
+[01-Apr-2025 10:16:32 America/Fortaleza] PHP Warning:  foreach() argument must be of type array|object, null given in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 324
+[01-Apr-2025 10:16:32 America/Fortaleza] PHP Warning:  Undefined array key "name" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 320
+[01-Apr-2025 10:16:32 America/Fortaleza] PHP Warning:  Undefined array key "options" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 324
+[01-Apr-2025 10:16:32 America/Fortaleza] PHP Warning:  foreach() argument must be of type array|object, null given in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 324
+[01-Apr-2025 10:16:32 America/Fortaleza] PHP Warning:  Undefined array key "name" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 320
+[01-Apr-2025 10:16:32 America/Fortaleza] PHP Warning:  Undefined array key "options" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 324
+[01-Apr-2025 10:16:32 America/Fortaleza] PHP Warning:  foreach() argument must be of type array|object, null given in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 324
+[01-Apr-2025 10:19:37 America/Fortaleza] PHP Warning:  Undefined array key "name" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 320
+[01-Apr-2025 10:19:37 America/Fortaleza] PHP Warning:  Undefined array key "options" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 324
+[01-Apr-2025 10:19:37 America/Fortaleza] PHP Warning:  foreach() argument must be of type array|object, null given in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 324
+[01-Apr-2025 10:19:37 America/Fortaleza] PHP Warning:  Undefined array key "name" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 320
+[01-Apr-2025 10:19:37 America/Fortaleza] PHP Warning:  Undefined array key "options" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 324
+[01-Apr-2025 10:19:37 America/Fortaleza] PHP Warning:  foreach() argument must be of type array|object, null given in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 324
+[01-Apr-2025 10:19:37 America/Fortaleza] PHP Warning:  Undefined array key "name" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 320
+[01-Apr-2025 10:19:37 America/Fortaleza] PHP Warning:  Undefined array key "options" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 324
+[01-Apr-2025 10:19:37 America/Fortaleza] PHP Warning:  foreach() argument must be of type array|object, null given in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 324
+[01-Apr-2025 10:21:07 America/Fortaleza] PHP Warning:  Undefined array key "name" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 320
+[01-Apr-2025 10:21:07 America/Fortaleza] PHP Warning:  Undefined array key "options" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 324
+[01-Apr-2025 10:21:07 America/Fortaleza] PHP Warning:  foreach() argument must be of type array|object, null given in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 324
+[01-Apr-2025 10:21:07 America/Fortaleza] PHP Warning:  Undefined array key "name" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 320
+[01-Apr-2025 10:21:07 America/Fortaleza] PHP Warning:  Undefined array key "options" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 324
+[01-Apr-2025 10:21:07 America/Fortaleza] PHP Warning:  foreach() argument must be of type array|object, null given in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 324
+[01-Apr-2025 10:21:07 America/Fortaleza] PHP Warning:  Undefined array key "name" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 320
+[01-Apr-2025 10:21:07 America/Fortaleza] PHP Warning:  Undefined array key "options" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 324
+[01-Apr-2025 10:21:07 America/Fortaleza] PHP Warning:  foreach() argument must be of type array|object, null given in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 324
+[01-Apr-2025 10:21:08 America/Fortaleza] PHP Warning:  Undefined array key "name" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 320
+[01-Apr-2025 10:21:08 America/Fortaleza] PHP Warning:  Undefined array key "options" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 324
+[01-Apr-2025 10:21:08 America/Fortaleza] PHP Warning:  foreach() argument must be of type array|object, null given in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 324
+[01-Apr-2025 10:21:08 America/Fortaleza] PHP Warning:  Undefined array key "name" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 320
+[01-Apr-2025 10:21:08 America/Fortaleza] PHP Warning:  Undefined array key "options" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 324
+[01-Apr-2025 10:21:08 America/Fortaleza] PHP Warning:  foreach() argument must be of type array|object, null given in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 324
+[01-Apr-2025 10:21:08 America/Fortaleza] PHP Warning:  Undefined array key "name" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 320
+[01-Apr-2025 10:21:08 America/Fortaleza] PHP Warning:  Undefined array key "options" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 324
+[01-Apr-2025 10:21:08 America/Fortaleza] PHP Warning:  foreach() argument must be of type array|object, null given in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 324
+[01-Apr-2025 10:30:17 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 327
+[01-Apr-2025 10:30:18 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 327
+[01-Apr-2025 10:30:36 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 327
+[01-Apr-2025 10:30:37 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 327
+[01-Apr-2025 10:31:17 America/Fortaleza] PHP Parse error:  syntax error, unexpected token ";", expecting "]" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 125
+[01-Apr-2025 10:31:20 America/Fortaleza] PHP Parse error:  syntax error, unexpected token ";", expecting "]" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 125
+[01-Apr-2025 10:31:21 America/Fortaleza] PHP Parse error:  syntax error, unexpected token ";", expecting "]" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 125
+[01-Apr-2025 10:32:01 America/Fortaleza] PHP Parse error:  syntax error, unexpected token ";", expecting "]" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 125
+[01-Apr-2025 10:32:27 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 327
+[01-Apr-2025 10:32:28 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 327
+[01-Apr-2025 10:32:59 America/Fortaleza] PHP Parse error:  syntax error, unexpected token ";", expecting "]" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 124
+[01-Apr-2025 10:33:09 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 327
+[01-Apr-2025 10:33:10 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 327
+[01-Apr-2025 10:34:11 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 327
+[01-Apr-2025 10:34:12 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 327
+[01-Apr-2025 10:35:27 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php:310
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 310
+[01-Apr-2025 10:35:28 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php:310
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 310
+[01-Apr-2025 10:37:15 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php:310
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 310
+[01-Apr-2025 10:37:15 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php:310
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 310
+[01-Apr-2025 10:37:37 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 327
+[01-Apr-2025 10:37:38 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 327
+[01-Apr-2025 10:38:16 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 327
+[01-Apr-2025 10:38:17 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 327
+[01-Apr-2025 10:38:31 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 327
+[01-Apr-2025 10:38:32 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 327
+[01-Apr-2025 10:39:53 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 327
+[01-Apr-2025 10:39:54 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta/index.php on line 327
+[01-Apr-2025 10:41:01 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php on line 327
+[01-Apr-2025 10:41:04 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php on line 327
+[01-Apr-2025 10:44:10 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php on line 327
+[01-Apr-2025 10:44:11 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php on line 327
+[01-Apr-2025 10:44:32 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php on line 327
+[01-Apr-2025 10:44:33 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php on line 327
+[01-Apr-2025 10:45:58 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php on line 327
+[01-Apr-2025 10:45:59 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php on line 327
+[01-Apr-2025 10:48:22 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php on line 327
+[01-Apr-2025 10:48:23 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php on line 327
+[01-Apr-2025 10:49:19 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php on line 327
+[01-Apr-2025 10:49:20 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php on line 327
+[01-Apr-2025 10:49:30 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php on line 327
+[01-Apr-2025 10:49:31 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php on line 327
+[01-Apr-2025 10:51:07 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php on line 327
+[01-Apr-2025 10:51:08 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php on line 327
+[01-Apr-2025 10:51:17 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php on line 327
+[01-Apr-2025 10:52:05 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php on line 327
+[01-Apr-2025 10:52:06 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php on line 327
+[01-Apr-2025 10:53:25 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php on line 327
+[01-Apr-2025 10:53:26 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php on line 327
+[01-Apr-2025 10:54:06 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php on line 327
+[01-Apr-2025 10:54:18 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php on line 327
+[01-Apr-2025 10:54:28 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php on line 327
+[01-Apr-2025 10:54:29 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php on line 327
+[01-Apr-2025 10:55:48 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php on line 327
+[01-Apr-2025 10:56:13 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php on line 327
+[01-Apr-2025 10:56:14 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php on line 327
+[01-Apr-2025 11:02:23 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php on line 327
+[01-Apr-2025 11:02:34 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php:327
+Stack trace:
+#0 {main}
+  thrown in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php on line 327
+[01-Apr-2025 13:08:07 America/Fortaleza] PHP Parse error:  syntax error, unexpected token "=>", expecting "]" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php on line 43
+[01-Apr-2025 13:11:30 America/Fortaleza] PHP Parse error:  syntax error, unexpected token "=>", expecting "]" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php on line 42
+[01-Apr-2025 13:11:31 America/Fortaleza] PHP Parse error:  syntax error, unexpected token "=>", expecting "]" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php on line 42
+[01-Apr-2025 13:11:57 America/Fortaleza] PHP Parse error:  syntax error, unexpected token "=>", expecting "]" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php on line 42
+[01-Apr-2025 13:13:06 America/Fortaleza] PHP Warning:  Undefined array key "variations" in /home1/achad879/promocoesdashop.com/shopee2/bicicleta2/index.php on line 295

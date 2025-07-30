@@ -4,8 +4,8 @@
 class StateManager {
     constructor() {
         this.state = {
-            selectedColor: 'azul', 
-            selectedCarreta: 'coca', // Estado inicial deve ser 'coca' como no HTML
+            selectedColor: 'preto', 
+            selectedBrinde: 'microondas', // Estado inicial deve ser 'microondas' como no HTML
             isProcessing: false,
             lockTimeout: null,
             lastUpdate: new Date()
@@ -84,13 +84,13 @@ class StateManager {
 }
 
 /**
- * SelectionController - Controla a seleção de opções (cores ou carretas)
+ * SelectionController - Controla a seleção de opções (cores ou brindes)
  */
 class SelectionController {
     constructor(stateManager, type) {
         this.stateManager = stateManager;
-        this.type = type; // 'color' ou 'carreta'
-        this.stateKey = type === 'color' ? 'selectedColor' : 'selectedCarreta';
+        this.type = type; // 'color' ou 'brinde'
+        this.stateKey = type === 'color' ? 'selectedColor' : 'selectedBrinde';
         this.containerSelector = type === 'color' ? '[data-id="571a5629"]' : '[data-id="571a5630"]';
     }
 
@@ -114,7 +114,7 @@ class SelectionController {
             // Adicionar classe de processamento
             const container = document.querySelector(this.containerSelector);
             if (container) {
-                const functionName = this.type === 'color' ? 'changeProductImage' : 'changeCarretaImage';
+                const functionName = this.type === 'color' ? 'changeProductImage' : 'changeBrindeImage';
                 const selectedButton = container.querySelector(`[onclick="${functionName}('${option}')"]`);
 
                 if (selectedButton) {
@@ -173,7 +173,7 @@ class SelectionController {
             });
 
             // Adiciona classe ativa ao botão selecionado
-            const functionName = this.type === 'color' ? 'changeProductImage' : 'changeCarretaImage';
+            const functionName = this.type === 'color' ? 'changeProductImage' : 'changeBrindeImage';
             const selectedButton = container.querySelector(`[onclick="${functionName}('${selectedOption}')"]`);
 
             if (selectedButton) {
@@ -202,12 +202,12 @@ class SelectionController {
                         mainImage.classList.remove('image-loading');
                     }, 300);
                 }
-            } else if (this.type === 'carreta') {
-                const carretaImage = document.getElementById('carreta-preview-image');
-                if (carretaImage) {
-                    carretaImage.classList.add('image-loading');
+            } else if (this.type === 'brinde') {
+                const brindeImage = document.getElementById('brinde-preview-image');
+                if (brindeImage) {
+                    brindeImage.classList.add('image-loading');
                     setTimeout(() => {
-                        carretaImage.classList.remove('image-loading');
+                        brindeImage.classList.remove('image-loading');
                     }, 300);
                 }
             }
@@ -245,8 +245,8 @@ class SelectionController {
         }
 
         const validOptions = this.type === 'color'
-            ? ['vermelho', 'azul', 'verde', 'branco', 'preto']
-            : ['coca', 'sedex', 'heineken', 'skol', 'casas'];
+            ? ['preto'] // Apenas preto disponível para Air Fryer
+            : ['microondas', 'liquidificador', 'mixer', 'sanduicheira', 'panela', 'cafeteira']; // Opções de brindes
 
         return validOptions.includes(option);
     }
@@ -262,19 +262,16 @@ class ImageManager {
 
         // URLs das imagens
         this.productImages = {
-            'vermelho': 'https://centraldacompra.shop/cdn/shop/files/ChatGPT_Image_25_de_jun._de_2025_00_31_55_1024x.png?v=1752783302',
-            'azul': 'https://centraldacompra.shop/cdn/shop/files/ChatGPT_Image_25_de_jun._de_2025_00_24_44_1024x.png?v=1752783302',
-            'verde': 'https://centraldacompra.shop/cdn/shop/files/ChatGPT_Image_26_de_jun._de_2025_21_33_11_1024x.png?v=1752783302',
-            'branco': 'https://centraldacompra.shop/cdn/shop/files/ChatGPT_Image_25_de_jun._de_2025_00_27_28_1024x.png?v=1752783302',
-            'preto': 'https://centraldacompra.shop/cdn/shop/files/SUA_MEMORIA_AQUI_1_1080x.png?v=1752783302'
+            'preto': 'images/airfryer-principal.png'
         };
 
-        this.carretaImages = {
-            'coca': 'https://centraldacompra.shop/cdn/shop/files/ChatGPT_Image_25_de_jun._de_2025_01_07_21_1024x.png?v=1752783303',
-            'sedex': 'https://elranchobrasil.com/cdn/shop/files/5_1000x.png?v=1752880379',
-            'heineken': 'https://centraldacompra.shop/cdn/shop/files/ChatGPT_Image_26_de_jun._de_2025_21_36_04_1024x.png?v=1752783302',
-            'skol': 'https://centraldacompra.shop/cdn/shop/files/ChatGPT_Image_26_de_jun._de_2025_21_42_41_1_1024x.png?v=1752783304',
-            'casas': 'https://centraldacompra.shop/cdn/shop/files/ChatGPT_Image_26_de_jun._de_2025_21_55_27_1024x.png?v=1752783303'
+        this.brindeImages = {
+            'microondas': 'https://imgs.casasbahia.com.br/55065338/1g.jpg',
+            'liquidificador': 'https://cdn.leroymerlin.com.br/products/liquidificador_arno_power_max_15_velocidades_1000w__vermelho_1566705210_b609_600x600.jpg',
+            'mixer': 'https://electrolux.vtexassets.com/arquivos/ids/210171/EIB10_MIXER_127V_Frente.jpg?v=638815549423900000',
+            'sanduicheira': 'https://lojaskubbo.vteximg.com.br/arquivos/ids/163703-1000-1000/Grill-Sanduicheira-Mallory-ChefPro-900W-Black-Inox-Antiaderente-Com-Coletor-Gordura-.jpg?v=638494993872500000',
+            'panela': 'https://t62533.vteximg.com.br/arquivos/ids/942876-1000-1000/PE42.jpg?v=638265785854000000',
+            'cafeteira': 'https://m.media-amazon.com/images/I/71VX8mqGMbL._UF894,1000_QL80_.jpg'
         };
 
         // Inicializar preload
@@ -288,8 +285,8 @@ class ImageManager {
         try {
             if (type === 'color') {
                 this.updateProductImage(option);
-            } else if (type === 'carreta') {
-                this.updateCarretaImage(option);
+            } else if (type === 'brinde') {
+                this.updateBrindeImage(option);
             }
         } catch (error) {
             console.error(`Erro ao atualizar imagem ${type}:`, error);
@@ -321,7 +318,7 @@ class ImageManager {
             setTimeout(() => {
                 mainImage.src = imageUrl;
                 mainImage.srcset = '';
-                mainImage.alt = 'Caminhão ' + color.charAt(0).toUpperCase() + color.slice(1);
+                mainImage.alt = 'Air Fryer ' + color.charAt(0).toUpperCase() + color.slice(1);
                 
                 // Restaurar opacidade após carregar
                 mainImage.onload = () => {
@@ -332,60 +329,86 @@ class ImageManager {
     }
 
     /**
-     * Atualiza imagem de pré-visualização da carreta
+     * Atualiza imagem de pré-visualização do brinde
      */
-    updateCarretaImage(carreta) {
-        let carretaImage = document.getElementById('carreta-preview-image');
-        const imageUrl = this.carretaImages[carreta];
+    updateBrindeImage(brinde) {
+        let brindeImage = document.getElementById('brinde-preview-image');
+        const imageUrl = this.brindeImages[brinde];
 
         // Se a imagem não existir, criar o elemento
-        if (!carretaImage) {
-            // Encontrar o container da carreta
-            const carretaContainer = document.querySelector('[data-id="7516f890"]');
-            if (carretaContainer) {
+        if (!brindeImage) {
+            // Encontrar o container do brinde
+            const brindeContainer = document.querySelector('[data-id="7516f890"]');
+            if (brindeContainer) {
                 // Criar o elemento de imagem
                 const imageContainer = document.createElement('div');
                 imageContainer.className = 'elementor-widget-container';
                 
-                carretaImage = document.createElement('img');
-                carretaImage.id = 'carreta-preview-image';
-                carretaImage.width = '180';
-                carretaImage.height = '180';
-                carretaImage.className = 'attachment-medium size-medium';
-                carretaImage.alt = 'Carreta ' + carreta.charAt(0).toUpperCase() + carreta.slice(1);
+                brindeImage = document.createElement('img');
+                brindeImage.id = 'brinde-preview-image';
+                brindeImage.className = 'attachment-medium size-medium brinde-image';
+                brindeImage.alt = 'Brinde ' + brinde.charAt(0).toUpperCase() + brinde.slice(1);
                 
-                imageContainer.appendChild(carretaImage);
-                carretaContainer.appendChild(imageContainer);
+                // Configurar para melhor qualidade no mobile
+                brindeImage.setAttribute('decoding', 'async');
+                brindeImage.setAttribute('loading', 'eager');
+                brindeImage.style.imageRendering = 'auto';
+                
+                imageContainer.appendChild(brindeImage);
+                brindeContainer.appendChild(imageContainer);
             }
         }
 
-        if (carretaImage && imageUrl) {
+        if (brindeImage && imageUrl) {
             // Verificar se a imagem já está em um container
-            let container = carretaImage.closest('.carreta-preview-container');
+            let container = brindeImage.closest('.brinde-preview-container');
 
             // Se não estiver, criar o container
             if (!container) {
                 container = document.createElement('div');
-                container.className = 'carreta-preview-container';
-                if (carretaImage.parentNode) {
-                    carretaImage.parentNode.insertBefore(container, carretaImage);
-                    container.appendChild(carretaImage);
+                container.className = 'brinde-preview-container';
+                if (brindeImage.parentNode) {
+                    brindeImage.parentNode.insertBefore(container, brindeImage);
+                    container.appendChild(brindeImage);
                 }
             }
             
-            // Aplicar efeito de transição
-            carretaImage.style.opacity = "0.7";
+            // Aplicar classe de loading
+            brindeImage.classList.add('image-loading');
+            brindeImage.classList.remove('image-loaded');
             
-            setTimeout(() => {
-                carretaImage.src = imageUrl;
-                carretaImage.srcset = '';
-                carretaImage.alt = 'Carreta ' + carreta.charAt(0).toUpperCase() + carreta.slice(1);
-                
-                // Restaurar opacidade após carregar
-                carretaImage.onload = () => {
-                    carretaImage.style.opacity = "1";
-                };
-            }, 150);
+            // Preload com melhor qualidade
+            const img = new Image();
+            img.crossOrigin = 'anonymous';
+            img.decoding = 'async';
+            
+            img.onload = () => {
+                setTimeout(() => {
+                    brindeImage.src = imageUrl;
+                    brindeImage.alt = 'Brinde ' + brinde.charAt(0).toUpperCase() + brinde.slice(1);
+                    
+                    // Configurar srcset para diferentes resoluções mobile
+                    brindeImage.srcset = `${imageUrl} 1x, ${imageUrl} 2x`;
+                    brindeImage.sizes = '(max-width: 480px) 240px, (max-width: 768px) 280px, 300px';
+                    
+                    // Remover atributos de tamanho fixo
+                    brindeImage.removeAttribute('width');
+                    brindeImage.removeAttribute('height');
+                    
+                    // Aplicar classes para transição suave
+                    brindeImage.classList.remove('image-loading');
+                    brindeImage.classList.add('image-loaded');
+                }, 150);
+            };
+            
+            img.onerror = () => {
+                console.warn('Erro ao carregar imagem do brinde:', imageUrl);
+                brindeImage.classList.remove('image-loading');
+                brindeImage.classList.add('image-loaded');
+                // Fallback para imagem anterior
+            };
+            
+            img.src = imageUrl;
         }
     }
 
@@ -393,7 +416,7 @@ class ImageManager {
      * Pré-carrega imagens para melhor performance
      */
     preloadImages() {
-        const allImages = [...Object.values(this.productImages), ...Object.values(this.carretaImages)];
+        const allImages = [...Object.values(this.productImages), ...Object.values(this.brindeImages)];
 
         allImages.forEach(url => {
             if (!this.imageCache.has(url)) {
@@ -423,15 +446,15 @@ class ProductSelector {
     constructor() {
         this.stateManager = new StateManager();
         this.colorController = new SelectionController(this.stateManager, 'color');
-        this.carretaController = new SelectionController(this.stateManager, 'carreta');
+        this.brindeController = new SelectionController(this.stateManager, 'brinde');
         this.imageManager = new ImageManager(this.stateManager);
 
         this.debounceTimeout = null;
         this.lastClickTime = 0;
 
         // Definir os estados iniciais
-        this.stateManager.updateState('selectedColor', 'azul');
-        this.stateManager.updateState('selectedCarreta', 'coca');
+        this.stateManager.updateState('selectedColor', 'preto');
+        this.stateManager.updateState('selectedBrinde', 'microondas');
 
         this.init();
     }
@@ -451,8 +474,8 @@ class ProductSelector {
         this.stateManager.addListener((key, value) => {
             if (key === 'selectedColor') {
                 this.imageManager.updateImage('color', value);
-            } else if (key === 'selectedCarreta') {
-                this.imageManager.updateImage('carreta', value);
+            } else if (key === 'selectedBrinde') {
+                this.imageManager.updateImage('brinde', value);
             }
         });
         
@@ -500,10 +523,10 @@ class ProductSelector {
             this.setupContainerListeners(colorContainer, 'color');
         }
 
-        // Event delegation para carretas
-        const carretaContainer = document.querySelector('[data-id="571a5630"]');
-        if (carretaContainer) {
-            this.setupContainerListeners(carretaContainer, 'carreta');
+        // Event delegation para brindes
+        const brindeContainer = document.querySelector('[data-id="571a5630"]');
+        if (brindeContainer) {
+            this.setupContainerListeners(brindeContainer, 'brinde');
         }
 
         // Inicializar com valores padrão
@@ -570,8 +593,8 @@ class ProductSelector {
         // Processar seleção
         if (type === 'color') {
             this.colorController.handleSelection(option);
-        } else if (type === 'carreta') {
-            this.carretaController.handleSelection(option);
+        } else if (type === 'brinde') {
+            this.brindeController.handleSelection(option);
         }
     }
 
@@ -581,38 +604,38 @@ class ProductSelector {
     initializeDefaults() {
         // Pequeno delay para garantir que o DOM esteja pronto
         setTimeout(() => {
-            // Selecionar azul como cor padrão (como na imagem de referência)
-            this.colorController.handleSelection('azul');
+            // Selecionar preto como cor padrão (única cor disponível)
+            this.colorController.handleSelection('preto');
             
-            // Selecionar coca como carreta padrão (como na imagem de referência)
-            this.carretaController.handleSelection('coca');
+            // Selecionar microondas como brinde padrão
+            this.brindeController.handleSelection('microondas');
             
             // Adicionar classes para indicar visualmente as seleções iniciais
             const colorContainer = document.querySelector('[data-id="571a5629"]');
             if (colorContainer) {
-                const azulButton = colorContainer.querySelector('[onclick*="changeProductImage(\'azul\')"]');
-                if (azulButton) {
-                    const buttonWrapper = azulButton.closest('.elementor-widget-button');
+                const pretoButton = colorContainer.querySelector('[onclick*="changeProductImage(\'preto\')"]');
+                if (pretoButton) {
+                    const buttonWrapper = pretoButton.closest('.elementor-widget-button');
                     if (buttonWrapper) {
                         // Remover de todos primeiro
                         const allButtons = colorContainer.querySelectorAll('.elementor-widget-button');
                         allButtons.forEach(btn => btn.classList.remove('elementor-widget-active'));
-                        // Adicionar ao botão azul
+                        // Adicionar ao botão preto
                         buttonWrapper.classList.add('elementor-widget-active');
                     }
                 }
             }
             
-            const carretaContainer = document.querySelector('[data-id="571a5630"]');
-            if (carretaContainer) {
-                const cocaButton = carretaContainer.querySelector('[onclick*="changeCarretaImage(\'coca\')"]');
-                if (cocaButton) {
-                    const buttonWrapper = cocaButton.closest('.elementor-widget-button');
+            const brindeContainer = document.querySelector('[data-id="571a5630"]');
+            if (brindeContainer) {
+                const microondasButton = brindeContainer.querySelector('[onclick*="changeBrindeImage(\'microondas\')"]');
+                if (microondasButton) {
+                    const buttonWrapper = microondasButton.closest('.elementor-widget-button');
                     if (buttonWrapper) {
                         // Remover de todos primeiro
-                        const allButtons = carretaContainer.querySelectorAll('.elementor-widget-button');
+                        const allButtons = brindeContainer.querySelectorAll('.elementor-widget-button');
                         allButtons.forEach(btn => btn.classList.remove('elementor-widget-active'));
-                        // Adicionar ao botão coca
+                        // Adicionar ao botão microondas
                         buttonWrapper.classList.add('elementor-widget-active');
                     }
                 }
@@ -628,10 +651,10 @@ class ProductSelector {
     }
 
     /**
-     * Método público para mudança de carreta (compatibilidade)
+     * Método público para mudança de brinde (compatibilidade)
      */
-    changeCarretaImage(carreta) {
-        return this.carretaController.handleSelection(carreta);
+    changeBrindeImage(brinde) {
+        return this.brindeController.handleSelection(brinde);
     }
 }
 
@@ -646,9 +669,9 @@ function changeProductImage(color) {
     return false;
 }
 
-function changeCarretaImage(carreta) {
+function changeBrindeImage(brinde) {
     if (productSelector) {
-        return productSelector.changeCarretaImage(carreta);
+        return productSelector.changeBrindeImage(brinde);
     }
     return false;
 }
