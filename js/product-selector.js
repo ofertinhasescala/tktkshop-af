@@ -346,10 +346,13 @@ class ImageManager {
                 
                 brindeImage = document.createElement('img');
                 brindeImage.id = 'brinde-preview-image';
-                brindeImage.width = '180';
-                brindeImage.height = '180';
                 brindeImage.className = 'attachment-medium size-medium brinde-image';
                 brindeImage.alt = 'Brinde ' + brinde.charAt(0).toUpperCase() + brinde.slice(1);
+                
+                // Configurar para melhor qualidade no mobile
+                brindeImage.setAttribute('decoding', 'async');
+                brindeImage.setAttribute('loading', 'eager');
+                brindeImage.style.imageRendering = 'auto';
                 
                 imageContainer.appendChild(brindeImage);
                 brindeContainer.appendChild(imageContainer);
@@ -370,19 +373,42 @@ class ImageManager {
                 }
             }
             
-            // Aplicar efeito de transição
-            brindeImage.style.opacity = "0.7";
+            // Aplicar classe de loading
+            brindeImage.classList.add('image-loading');
+            brindeImage.classList.remove('image-loaded');
             
-            setTimeout(() => {
-                brindeImage.src = imageUrl;
-                brindeImage.srcset = '';
-                brindeImage.alt = 'Brinde ' + brinde.charAt(0).toUpperCase() + brinde.slice(1);
-                
-                // Restaurar opacidade após carregar
-                brindeImage.onload = () => {
-                    brindeImage.style.opacity = "1";
-                };
-            }, 150);
+            // Preload com melhor qualidade
+            const img = new Image();
+            img.crossOrigin = 'anonymous';
+            img.decoding = 'async';
+            
+            img.onload = () => {
+                setTimeout(() => {
+                    brindeImage.src = imageUrl;
+                    brindeImage.alt = 'Brinde ' + brinde.charAt(0).toUpperCase() + brinde.slice(1);
+                    
+                    // Configurar srcset para diferentes resoluções mobile
+                    brindeImage.srcset = `${imageUrl} 1x, ${imageUrl} 2x`;
+                    brindeImage.sizes = '(max-width: 480px) 240px, (max-width: 768px) 280px, 300px';
+                    
+                    // Remover atributos de tamanho fixo
+                    brindeImage.removeAttribute('width');
+                    brindeImage.removeAttribute('height');
+                    
+                    // Aplicar classes para transição suave
+                    brindeImage.classList.remove('image-loading');
+                    brindeImage.classList.add('image-loaded');
+                }, 150);
+            };
+            
+            img.onerror = () => {
+                console.warn('Erro ao carregar imagem do brinde:', imageUrl);
+                brindeImage.classList.remove('image-loading');
+                brindeImage.classList.add('image-loaded');
+                // Fallback para imagem anterior
+            };
+            
+            img.src = imageUrl;
         }
     }
 
