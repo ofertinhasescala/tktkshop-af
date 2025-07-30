@@ -81,239 +81,80 @@
     margin: 0 4px 8px 0 !important;
 }
 
-/* Estilo para a imagem de pré-visualização da brinde - VERSÃO CORRIGIDA */
+/* Estilo para a imagem de pré-visualização da brinde */
 #brinde-preview-image {
     width: 100% !important;
     height: auto !important;
-    max-width: 400px !important;
-    max-height: 400px !important;
+    max-width: 300px !important;
+    max-height: 300px !important;
     object-fit: contain !important;
     display: block !important;
     margin: 0 auto !important;
-    transition: all 0.3s ease-in-out !important;
-    border-radius: 8px !important;
+    transition: opacity 0.3s ease-in-out !important;
+    border-radius: 4px !important;
     background-color: #ffffff !important;
-    
-    /* CORREÇÕES PARA EVITAR EMBAÇAMENTO */
-    image-rendering: auto !important;
-    image-rendering: -webkit-optimize-contrast !important;
-    -webkit-backface-visibility: hidden !important;
-    backface-visibility: hidden !important;
-    -webkit-transform: translateZ(0) !important;
-    transform: translateZ(0) !important;
-    will-change: transform !important;
-    -webkit-font-smoothing: subpixel-antialiased !important;
-    
-    /* ANTI-ALIASING MELHORADO */
-    -webkit-image-rendering: -webkit-optimize-contrast !important;
-    -moz-image-rendering: -moz-crisp-edges !important;
-    
-    /* QUALIDADE MÁXIMA */
-    image-orientation: from-image !important;
-    image-resolution: from-image !important;
-    object-position: center !important;
 }
 
-/* Container melhorado para a imagem de pré-visualização da brinde */
-.brinde-preview-container,
-.preview-container,
-.elementor-widget-image {
+/* Estilo para o container da imagem de pré-visualização da brinde */
+.brinde-preview-container {
     width: 100% !important;
-    padding: 15px !important;
+    padding: 10px !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
     overflow: hidden !important;
     background-color: #ffffff !important;
-    border-radius: 8px !important;
-    margin-bottom: 20px !important;
-    min-height: 300px !important;
-    
-    /* QUALIDADE DE RENDERIZAÇÃO */
-    -webkit-transform: translateZ(0) !important;
-    transform: translateZ(0) !important;
-    will-change: transform !important;
+    border-radius: 4px !important;
+    margin-bottom: 15px !important;
+}
+
+/* Estilo para o container da imagem principal do produto */
+.main-product-container {
+    width: 100% !important;
+    padding: 10px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow: hidden !important;
+    background-color: #ffffff !important;
+    border-radius: 4px !important;
+    margin-bottom: 15px !important;
 }
 
 /* Estilo para a imagem principal do produto */
 #main-product-image {
     width: 100% !important;
     height: auto !important;
-    max-width: 400px !important;
-    max-height: 400px !important;
+    max-width: 300px !important;
+    max-height: 300px !important;
     object-fit: contain !important;
     display: block !important;
     margin: 0 auto !important;
-    transition: all 0.3s ease-in-out !important;
-    border-radius: 8px !important;
+    transition: opacity 0.3s ease-in-out !important;
+    border-radius: 4px !important;
     background-color: #ffffff !important;
-    
-    /* MELHORIAS PARA QUALIDADE */
-    image-rendering: auto !important;
-    -webkit-backface-visibility: hidden !important;
-    backface-visibility: hidden !important;
-    transform: translateZ(0) !important;
-    will-change: transform !important;
-    -webkit-font-smoothing: subpixel-antialiased !important;
 }
 
-/* Estilos responsivos MELHORADOS */
+/* Estilos responsivos para telas menores */
 @media (max-width: 768px) {
     #brinde-preview-image,
     #main-product-image {
-        max-width: 350px !important;
-        max-height: 350px !important;
-        
-        /* MELHOR QUALIDADE PARA TABLETS */
-        image-rendering: auto !important;
-        -webkit-image-rendering: -webkit-optimize-contrast !important;
-        -webkit-transform: translate3d(0, 0, 0) !important;
-        transform: translate3d(0, 0, 0) !important;
-    }
-    
-    .brinde-preview-container,
-    .preview-container {
-        min-height: 280px !important;
-        padding: 10px !important;
+        max-width: 250px !important;
+        max-height: 250px !important;
     }
 }
 
 @media (max-width: 480px) {
     #brinde-preview-image,
     #main-product-image {
-        max-width: 300px !important;
-        max-height: 300px !important;
-        
-        /* OTIMIZAÇÕES ESPECÍFICAS PARA MOBILE */
-        image-rendering: auto !important;
-        -webkit-image-rendering: -webkit-optimize-contrast !important;
-        
-        /* FORÇA RESOLUÇÃO ALTA EM RETINA DISPLAYS */
-        -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) !important;
-        transform: translate3d(0, 0, 0) scale3d(1, 1, 1) !important;
-        
-        /* REMOVE BLUR EM WEBKIT */
-        -webkit-font-smoothing: subpixel-antialiased !important;
-        -moz-osx-font-smoothing: auto !important;
-        
-        /* FORÇA HARDWARE ACCELERATION */
-        -webkit-perspective: 1000px !important;
-        perspective: 1000px !important;
-    }
-    
-    .brinde-preview-container,
-    .preview-container,
-    .main-product-container {
-        padding: 8px !important;
-        min-height: 250px !important;
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        
-        /* MELHORA RENDERIZAÇÃO DO CONTAINER */
-        -webkit-transform: translateZ(0) !important;
-        transform: translateZ(0) !important;
+        max-width: 200px !important;
+        max-height: 200px !important;
     }
 }
 
-/* CORREÇÕES ESPECÍFICAS PARA HIGH-DPI DISPLAYS (RETINA) - MELHORADAS */
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-       only screen and (min--moz-device-pixel-ratio: 2),
-       only screen and (-o-min-device-pixel-ratio: 2/1),
-       only screen and (min-device-pixel-ratio: 2),
-       only screen and (min-resolution: 192dpi),
-       only screen and (min-resolution: 2dppx) {
-    
-    #brinde-preview-image,
-    #main-product-image {
-        /* FORÇA QUALIDADE MÁXIMA EM DISPLAYS RETINA */
-        image-rendering: auto !important;
-        image-rendering: -webkit-optimize-contrast !important;
-        image-rendering: optimize-contrast !important;
-        -webkit-image-rendering: -webkit-optimize-contrast !important;
-        
-        /* FORCE HIGH QUALITY SCALING */
-        -ms-interpolation-mode: bicubic !important;
-        
-        /* HARDWARE ACCELERATION OTIMIZADA */
-        -webkit-transform: translateZ(0) scale3d(1, 1, 1) !important;
-        transform: translateZ(0) scale3d(1, 1, 1) !important;
-        -webkit-backface-visibility: hidden !important;
-        backface-visibility: hidden !important;
-        will-change: transform !important;
-        
-        /* ANTI-ALIASING PERFEITO */
-        -webkit-font-smoothing: subpixel-antialiased !important;
-        -moz-osx-font-smoothing: auto !important;
-        text-rendering: optimizeQuality !important;
-    }
-}
-
-/* CORREÇÕES PARA DISPOSITIVOS iOS SAFARI */
-@supports (-webkit-touch-callout: none) {
-    #brinde-preview-image,
-    #main-product-image {
-        -webkit-transform: translateZ(0) !important;
-        transform: translateZ(0) !important;
-        -webkit-backface-visibility: hidden !important;
-        -webkit-perspective: 1000px !important;
-        -webkit-image-rendering: -webkit-optimize-contrast !important;
-    }
-}
-
-/* Estados de carregamento MELHORADOS */
+/* Estilo para imagens durante carregamento */
 .image-loading {
-    opacity: 0.6 !important;
-    filter: blur(1px) !important;
-    transition: all 0.4s ease !important;
-    transform: scale(0.98) !important;
-}
-
-/* Estado da imagem quando carregada */
-.image-loaded {
-    opacity: 1 !important;
-    filter: none !important;
-    transition: all 0.4s ease !important;
-    transform: scale(1) !important;
-}
-
-/* MELHORIAS PARA BOTÕES DE SELEÇÃO */
-.elementor-widget-button {
-    transition: all 0.3s ease !important;
-}
-
-.elementor-widget-button.elementor-widget-active {
-    transform: scale(1.05) !important;
-    box-shadow: 0 4px 12px rgba(255, 71, 87, 0.3) !important;
-}
-
-.elementor-widget-button:hover {
-    transform: scale(1.02) !important;
-}
-
-/* ANIMAÇÕES SUAVES */
-@keyframes fadeInScale {
-    from {
-        opacity: 0;
-        transform: scale(0.95);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-.image-loaded {
-    animation: fadeInScale 0.4s ease-out !important;
-}
-
-/* CORREÇÃO PARA IMAGENS QUE NÃO CARREGAM */
-#brinde-preview-image:not([src]),
-#main-product-image:not([src]) {
-    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjVGNUY1Ii8+CjxwYXRoIGQ9Ik0xMDAgNzBDMTA1LjUyMyA3MCAxMTAgNzQuNDc3IDExMCA4MFY5MEMxMTAgOTUuNTIzIDEwNS41MjMgMTAwIDEwMCAxMDBDOTQuNDc3IDEwMCA5MCA5NS41MjMgOTAgOTBWODBDOTAgNzQuNDc3IDk0LjQ3NyA3MCAxMDAgNzBaIiBmaWxsPSIjQ0NDIi8+CjxwYXRoIGQ9Ik04MCA2MEg5MFY1MEg4MFY2MFoiIGZpbGw9IiNDQ0MiLz4KPC9zdmc+') !important;
-    background-repeat: no-repeat !important;
-    background-position: center !important;
-    background-size: 80px 80px !important;
+    opacity: 0.7;
 }
 
 /* Animação de transição para seleções */
