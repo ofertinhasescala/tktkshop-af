@@ -512,7 +512,16 @@
 		href="https://papelariaparapintar.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpapelariaparapintar.com%2F">
 	<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"
 		href="https://papelariaparapintar.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpapelariaparapintar.com%2F&format=xml">
+	</script>
+	<style>
 
+	</style>
+	<script id="wpcp_css_disable_selection" type="text/javascript">
+		var e = document.getElementsByTagName('body')[0];
+		if (e) {
+			e.setAttribute('unselectable', "on");
+		}
+	</script>
 	<!-- TikTok Pixel Code Start -->
 	<script>
 		!function (w, d, t) {
@@ -554,544 +563,10 @@
 			}
 		}
 	</style>
-
-	<!-- Estilos adicionais para o popup -->
-	<style>
-		/* Reset para garantir que todos os elementos do popup sejam exibidos corretamente */
-		body {
-			margin: 0;
-			padding: 0;
-			overflow-x: hidden;
-		}
-
-		/* Estilos para o popup */
-		[data-elementor-type="popup"] {
-			display: block !important;
-			width: 90% !important;
-			max-width: 380px !important;
-			height: auto !important;
-			max-height: 90vh !important;
-			background-color: white !important;
-			position: relative !important;
-			z-index: 9999 !important;
-			visibility: visible !important;
-			opacity: 1 !important;
-			animation: fadeIn 0.3s ease-out;
-			overflow-y: auto !important;
-			overflow-x: hidden !important;
-			border-radius: 12px !important;
-			box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15) !important;
-		}
-
-		/* Forçar visibilidade de todos os elementos do popup */
-		[data-elementor-type="popup"] * {
-			visibility: visible !important;
-			opacity: 1 !important;
-		}
-
-		/* Garantir que os containers sejam exibidos corretamente */
-		[data-elementor-type="popup"] .e-con,
-		[data-elementor-type="popup"] .e-con-inner,
-		[data-elementor-type="popup"] .elementor-element,
-		[data-elementor-type="popup"] .elementor-widget-container,
-		[data-elementor-type="popup"] .elementor-widget {
-			display: block !important;
-			visibility: visible !important;
-			opacity: 1 !important;
-		}
-
-		/* Garantir que as imagens sejam exibidas corretamente */
-		[data-elementor-type="popup"] img {
-			display: inline-block !important;
-			max-width: 100% !important;
-			height: auto !important;
-		}
-
-		/* Garantir que os botões sejam exibidos corretamente */
-		[data-elementor-type="popup"] .elementor-button {
-			display: inline-block !important;
-		}
-
-		/* Estilo do overlay do popup */
-		.elementor-popup-modal {
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background-color: rgba(0, 0, 0, 0.7);
-			z-index: 9999;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			overflow-y: auto;
-			padding: 0;
-			animation: fadeIn 0.2s ease-out;
-		}
-
-		/* Estilo do conteúdo do popup */
-		[data-elementor-type="popup"] .e-con-inner {
-			background-color: white;
-			border-radius: 12px;
-			max-width: 380px;
-			width: 90%;
-			height: auto;
-			max-height: 90vh;
-			overflow-y: auto;
-			margin: 0 auto;
-			position: relative;
-			box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
-			display: block !important;
-			padding: 0 !important;
-			animation: slideUp 0.3s ease-out;
-		}
-
-		/* Garantir que todos os elementos do popup sejam exibidos */
-		[data-elementor-type="popup"] .elementor-element {
-			display: block !important;
-			visibility: visible !important;
-			opacity: 1 !important;
-		}
-
-		/* Garantir que o container principal seja exibido */
-		.elementor-element-2321415 {
-			display: block !important;
-			width: 100% !important;
-			height: auto !important;
-			min-height: 100vh !important;
-			padding: 0 !important;
-			visibility: visible !important;
-			opacity: 1 !important;
-		}
-
-		/* Layout do cabeçalho com preço e X */
-		.elementor-element[data-id="620c20f7"] {
-			position: sticky !important;
-			top: 0 !important;
-			z-index: 10 !important;
-			padding: 15px !important;
-			display: flex !important;
-			flex-direction: row !important;
-			align-items: center !important;
-			justify-content: space-between !important;
-			border-bottom: 1px solid #f0f0f0 !important;
-			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) !important;
-			background-color: white !important;
-			visibility: visible !important;
-			opacity: 1 !important;
-			border-top-left-radius: 12px !important;
-			border-top-right-radius: 12px !important;
-		}
-
-		/* Ajuste para o X de fechar */
-		.elementor-element[data-id="3899d286"] {
-			display: block !important;
-			visibility: visible !important;
-			opacity: 1 !important;
-			z-index: 10000 !important;
-		}
-
-		/* Ajuste para a imagem principal */
-		.elementor-element[data-id="7639c983"] {
-			text-align: center !important;
-			padding: 0 !important;
-			display: block !important;
-			visibility: visible !important;
-			opacity: 1 !important;
-		}
-
-		#main-product-image {
-			max-width: 120px !important;
-			height: auto !important;
-			margin: 0 auto !important;
-			display: block !important;
-			visibility: visible !important;
-			opacity: 1 !important;
-			transition: transform 0.3s ease-out;
-		}
-
-		/* Efeito hover na imagem principal */
-		#main-product-image:hover {
-			transform: scale(1.05);
-		}
-
-		/* Estilo para o preço */
-		.elementor-element[data-id="6a66f57e"] {
-			display: block !important;
-			visibility: visible !important;
-			opacity: 1 !important;
-		}
-
-		.elementor-element[data-id="6a66f57e"] .elementor-heading-title {
-			color: #ff4757 !important;
-			font-size: 22px !important;
-			font-weight: bold !important;
-			margin-right: 10px !important;
-			display: block !important;
-			visibility: visible !important;
-			opacity: 1 !important;
-		}
-
-		/* Estilo para o preço original */
-		.elementor-element[data-id="30c45e17"] {
-			display: block !important;
-			visibility: visible !important;
-			opacity: 1 !important;
-		}
-
-		.elementor-element[data-id="30c45e17"] .elementor-heading-title {
-			color: #999 !important;
-			font-size: 16px !important;
-			text-decoration: line-through !important;
-			display: block !important;
-			visibility: visible !important;
-			opacity: 1 !important;
-		}
-
-		/* Estilo para o desconto */
-		.elementor-element[data-id="68b15ff7"] {
-			display: block !important;
-			visibility: visible !important;
-			opacity: 1 !important;
-		}
-
-		.elementor-element[data-id="68b15ff7"] .elementor-heading-title {
-			color: #ff4757 !important;
-			font-size: 16px !important;
-			font-weight: bold !important;
-			background-color: #ffebee !important;
-			padding: 3px 8px !important;
-			border-radius: 4px !important;
-			display: inline-block !important;
-			visibility: visible !important;
-			opacity: 1 !important;
-		}
-
-		/* Estilo para o frete grátis */
-		.elementor-element[data-id="64dfed09"] {
-			display: block !important;
-			visibility: visible !important;
-			opacity: 1 !important;
-		}
-
-		.elementor-element[data-id="64dfed09"] .elementor-heading-title {
-			color: #4CAF50 !important;
-			font-size: 14px !important;
-			font-weight: bold !important;
-			margin-top: 5px !important;
-			display: block !important;
-			visibility: visible !important;
-			opacity: 1 !important;
-			background-color: rgba(76, 175, 80, 0.1) !important;
-			padding: 5px 10px !important;
-			border-radius: 4px !important;
-			text-align: center !important;
-		}
-
-		/* Estilo para o título do produto */
-		.elementor-element[data-id="6ca37c87"] {
-			display: block !important;
-			visibility: visible !important;
-			opacity: 1 !important;
-			margin-top: 10px !important;
-		}
-
-		.elementor-element[data-id="6ca37c87"] .elementor-heading-title {
-			color: #333 !important;
-			font-size: 14px !important;
-			line-height: 1.3 !important;
-			text-align: center !important;
-			padding: 0 20px !important;
-			margin-top: 5px !important;
-			margin-bottom: 10px !important;
-			font-weight: normal !important;
-			display: block !important;
-			visibility: visible !important;
-			opacity: 1 !important;
-		}
-
-		/* Estilo para os títulos de seção */
-		.elementor-element[data-id="2e393d4c"],
-		.elementor-element[data-id="2e393d4d"] {
-			display: block !important;
-			visibility: visible !important;
-			opacity: 1 !important;
-			margin-top: 10px !important;
-		}
-
-		.elementor-element[data-id="2e393d4c"] .elementor-heading-title,
-		.elementor-element[data-id="2e393d4d"] .elementor-heading-title {
-			color: #333 !important;
-			font-size: 16px !important;
-			font-weight: bold !important;
-			margin-bottom: 10px !important;
-			text-align: center !important;
-			display: block !important;
-			visibility: visible !important;
-			opacity: 1 !important;
-		}
-
-		/* Estilos para os botões de cor e carretas */
-		.elementor-element[data-id="571a5629"],
-		.elementor-element[data-id="571a5630"] {
-			display: flex !important;
-			flex-wrap: wrap !important;
-			justify-content: center !important;
-			gap: 8px !important;
-			padding: 0 15px 10px 15px !important;
-			visibility: visible !important;
-			opacity: 1 !important;
-		}
-
-		/* Novo estilo para os botões conforme referência */
-		.elementor-element[data-id="571a5629"] .elementor-button,
-		.elementor-element[data-id="571a5630"] .elementor-button {
-			background-color: #f5f5f5 !important;
-			color: #666 !important;
-			border: 1px solid #e0e0e0 !important;
-			border-radius: 8px !important;
-			padding: 8px 15px !important;
-			font-size: 13px !important;
-			min-height: auto !important;
-			height: auto !important;
-			text-transform: none !important;
-			line-height: 1.3 !important;
-			text-align: center !important;
-			display: inline-block !important;
-			visibility: visible !important;
-			opacity: 1 !important;
-			transition: all 0.2s ease-out !important;
-			position: relative !important;
-		}
-
-		/* Estilo para hover dos botões */
-		.elementor-element[data-id="571a5629"] .elementor-button:hover,
-		.elementor-element[data-id="571a5630"] .elementor-button:hover {
-			background-color: #ffffff !important;
-			border-color: #ff4757 !important;
-			color: #ff4757 !important;
-			transform: translateY(-2px) !important;
-			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
-		}
-
-		/* Estilo para botão ativo */
-		.elementor-element[data-id="571a5629"] .elementor-widget-active .elementor-button,
-		.elementor-element[data-id="571a5630"] .elementor-widget-active .elementor-button {
-			background-color: #ffffff !important;
-			border-color: #ff4757 !important;
-			color: #ff4757 !important;
-			box-shadow: 0 2px 8px rgba(255, 71, 87, 0.1) !important;
-			position: relative !important;
-		}
-
-		/* Ponto vermelho abaixo da opção ativa, como na referência */
-		.elementor-element[data-id="571a5629"] .elementor-widget-active .elementor-button::after,
-		.elementor-element[data-id="571a5630"] .elementor-widget-active .elementor-button::after {
-			content: '' !important;
-			position: absolute !important;
-			bottom: -4px !important;
-			left: 50% !important;
-			transform: translateX(-50%) !important;
-			width: 6px !important;
-			height: 6px !important;
-			border-radius: 50% !important;
-			background-color: #ff4757 !important;
-		}
-
-		/* Estilo para a imagem da carreta */
-		.elementor-element[data-id="18336e98"] {
-			display: block !important;
-			visibility: visible !important;
-			opacity: 1 !important;
-		}
-
-		#carreta-preview-image {
-			max-width: 200px !important;
-			height: auto !important;
-			border: 1px solid #f0f0f0 !important;
-			border-radius: 8px !important;
-			margin: 5px auto 10px auto !important;
-			display: block !important;
-			visibility: visible !important;
-			opacity: 1 !important;
-			padding: 5px !important;
-			background-color: white !important;
-			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05) !important;
-			transition: transform 0.3s ease-out, box-shadow 0.3s ease-out !important;
-		}
-
-		/* Efeito hover na imagem da carreta */
-		#carreta-preview-image:hover {
-			transform: scale(1.03) !important;
-			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15) !important;
-		}
-
-		/* Estilo para o botão de comprar agora */
-		.sticky-butao {
-			position: sticky !important;
-			bottom: 0 !important;
-			background-color: white !important;
-			padding: 15px 20px !important;
-			box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1) !important;
-			z-index: 100 !important;
-			width: 100% !important;
-			display: block !important;
-			visibility: visible !important;
-			opacity: 1 !important;
-			border-bottom-left-radius: 12px !important;
-			border-bottom-right-radius: 12px !important;
-		}
-
-		.sticky-butao .elementor-button {
-			background-color: #ff4757 !important;
-			color: #ffffff !important;
-			border-radius: 6px !important;
-			padding: 15px 24px !important;
-			font-size: 18px !important;
-			font-weight: bold !important;
-			width: 90% !important;
-			text-align: center !important;
-			margin: 0 auto !important;
-			display: block !important;
-			visibility: visible !important;
-			opacity: 1 !important;
-			transition: background-color 0.3s ease-out, transform 0.2s ease-out !important;
-		}
-
-		.sticky-butao .elementor-button:hover {
-			background-color: #e03a49 !important;
-			transform: translateY(-2px) !important;
-			box-shadow: 0 4px 10px rgba(255, 71, 87, 0.4) !important;
-		}
-
-		.sticky-butao .elementor-button:active {
-			transform: translateY(0) !important;
-			box-shadow: 0 2px 5px rgba(255, 71, 87, 0.4) !important;
-		}
-
-		/* Ajustes para layout vertical */
-		.elementor-element[data-id="18336e97"],
-		.elementor-element[data-id="18336e98"] {
-			padding: 10px 0 !important;
-			display: block !important;
-			visibility: visible !important;
-			opacity: 1 !important;
-		}
-
-		.elementor-element[data-id="7516f889"],
-		.elementor-element[data-id="7516f890"] {
-			margin-bottom: 10px !important;
-			text-align: left !important;
-			display: block !important;
-			visibility: visible !important;
-			opacity: 1 !important;
-		}
-
-		/* Separador entre seções */
-		.elementor-element[data-id="18336e97"] {
-			border-bottom: 1px solid #f0f0f0 !important;
-			margin-bottom: 10px !important;
-		}
-
-		/* Animação para os botões durante o processamento */
-		.elementor-element[data-id="571a5629"] .processing .elementor-button,
-		.elementor-element[data-id="571a5630"] .processing .elementor-button {
-			background-color: #f8f8f8 !important;
-			color: #999 !important;
-			cursor: wait !important;
-			opacity: 0.8 !important;
-		}
-
-		/* Animações para transições */
-		@keyframes fadeIn {
-			from {
-				opacity: 0;
-			}
-
-			to {
-				opacity: 1;
-			}
-		}
-
-		@keyframes slideUp {
-			from {
-				transform: translateY(10px);
-				opacity: 0.8;
-			}
-
-			to {
-				transform: translateY(0);
-				opacity: 1;
-			}
-		}
-
-		/* Animações para imagens */
-		.image-loading {
-			animation: pulse 0.7s infinite alternate;
-		}
-
-		@keyframes pulse {
-			from {
-				opacity: 0.8;
-			}
-
-			to {
-				opacity: 1;
-			}
-		}
-
-		/* Responsividade para dispositivos móveis */
-		@media (max-width: 767px) {
-			[data-elementor-type="popup"] {
-				width: 90% !important;
-				max-width: 380px !important;
-				height: auto !important;
-				max-height: 85vh !important;
-			}
-
-			[data-elementor-type="popup"] .e-con-inner {
-				width: 100%;
-				height: auto;
-				max-height: 85vh;
-				padding: 0 !important;
-			}
-
-			.elementor-element[data-id="571a5629"] .elementor-button,
-			.elementor-element[data-id="571a5630"] .elementor-button {
-				padding: 6px 12px !important;
-				font-size: 12px !important;
-			}
-
-			#main-product-image {
-				max-width: 130px !important;
-			}
-
-			#carreta-preview-image {
-				max-width: 150px !important;
-			}
-
-			.elementor-element[data-id="620c20f7"] {
-				padding: 8px 12px !important;
-			}
-
-			.elementor-element[data-id="6a66f57e"] .elementor-heading-title {
-				font-size: 20px !important;
-			}
-
-			.sticky-butao {
-				padding: 8px !important;
-			}
-
-			.sticky-butao .elementor-button {
-				padding: 10px 15px !important;
-				font-size: 15px !important;
-			}
-		}
-	</style>
 </head>
 
 <body
-	class="home wp-singular page-template page-template-elementor_header_footer page page-id-786 wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-template-full-width elementor-kit-7 elementor-page elementor-page-786">
+	class="home wp-singular page-template page-template-elementor_header_footer page page-id-786 wp-embed-responsive wp-theme-hello-elementor unselectable hello-elementor-default elementor-default elementor-template-full-width elementor-kit-7 elementor-page elementor-page-786">
 
 
 	<a class="skip-link screen-reader-text" href="#content">Ir para o conteúdo</a>
@@ -1154,8 +629,8 @@
 											background_background":"classic"}"="">
 											<div class="elementor-element elementor-widget elementor-widget-image">
 												<img width="640" height="640"
-													src="images/airfryer-principal.png"
-													class="attachment-large size-large" alt="Air Fryer Principal">
+													src="https://centraldacompra.shop/cdn/shop/files/ChatGPT_Image_25_de_jun._de_2025_00_24_44_1024x.png?v=1752783302"
+													class="attachment-large size-large" alt="Caminhão Azul">
 											</div>
 										</div>
 									</div>
@@ -1171,8 +646,8 @@
 											background_background":"classic"}"="">
 											<div class="elementor-element elementor-widget elementor-widget-image">
 												<img width="640" height="640"
-													src="images/airfryer-slide-1.png"
-													class="attachment-large size-large" alt="Air Fryer Vista Frontal">
+													src="https://centraldacompra.shop/cdn/shop/files/ChatGPT_Image_25_de_jun._de_2025_00_31_55_1024x.png?v=1752783302"
+													class="attachment-large size-large" alt="Caminhão Vermelho">
 											</div>
 										</div>
 									</div>
@@ -1188,8 +663,8 @@
 											background_background":"classic"}"="">
 											<div class="elementor-element elementor-widget elementor-widget-image">
 												<img width="640" height="640"
-													src="images/airfryer-slide-2.png"
-													class="attachment-large size-large" alt="Air Fryer Vista Lateral">
+													src="https://centraldacompra.shop/cdn/shop/files/ChatGPT_Image_26_de_jun._de_2025_21_33_11_1024x.png?v=1752783302"
+													class="attachment-large size-large" alt="Caminhão Verde">
 											</div>
 										</div>
 									</div>
@@ -1205,8 +680,8 @@
 											background_background":"classic"}"="">
 											<div class="elementor-element elementor-widget elementor-widget-image">
 												<img width="640" height="640"
-													src="images/airfryer-slide-3.png"
-													class="attachment-large size-large" alt="Air Fryer Detalhes">
+													src="https://centraldacompra.shop/cdn/shop/files/ChatGPT_Image_25_de_jun._de_2025_00_27_28_1024x.png?v=1752783302"
+													class="attachment-large size-large" alt="Caminhão Branco">
 											</div>
 										</div>
 									</div>
@@ -1222,8 +697,8 @@
 											background_background":"classic"}"="">
 											<div class="elementor-element elementor-widget elementor-widget-image">
 												<img width="640" height="640"
-													src="images/airfryer-slide-5.png"
-													class="attachment-large size-large" alt="Air Fryer Capacidade 12L">
+													src="https://centraldacompra.shop/cdn/shop/files/ChatGPT_Image_25_de_jun._de_2025_01_07_21_1024x.png?v=1752783303"
+													class="attachment-large size-large" alt="Carreta Coca Cola">
 											</div>
 										</div>
 									</div>
@@ -1239,8 +714,8 @@
 											background_background":"classic"}"="">
 											<div class="elementor-element elementor-widget elementor-widget-image">
 												<img width="640" height="640"
-													src="images/airfryer-slide-6.png"
-													class="attachment-large size-large" alt="Air Fryer Painel Digital">
+													src="https://centraldacompra.shop/cdn/shop/files/ChatGPT_Image_26_de_jun._de_2025_21_36_04_1024x.png?v=1752783302"
+													class="attachment-large size-large" alt="Carreta Heineken">
 											</div>
 										</div>
 									</div>
@@ -1256,8 +731,8 @@
 											background_background":"classic"}"="">
 											<div class="elementor-element elementor-widget elementor-widget-image">
 												<img width="640" height="640"
-													src="images/airfryer-slide-7.png"
-													class="attachment-large size-large" alt="Air Fryer Ângulo Diferente">
+													src="https://centraldacompra.shop/cdn/shop/files/ChatGPT_Image_26_de_jun._de_2025_21_42_41_1_1024x.png?v=1752783304"
+													class="attachment-large size-large" alt="Carreta Skol">
 											</div>
 										</div>
 									</div>
@@ -1273,8 +748,8 @@
 											background_background":"classic"}"="">
 											<div class="elementor-element elementor-widget elementor-widget-image">
 												<img width="640" height="640"
-													src="images/airfryer-slide-8.png"
-													class="attachment-large size-large" alt="Air Fryer Vista Completa">
+													src="https://centraldacompra.shop/cdn/shop/files/ChatGPT_Image_26_de_jun._de_2025_21_55_27_1024x.png?v=1752783303"
+													class="attachment-large size-large" alt="Carreta Casas Bahia">
 											</div>
 										</div>
 									</div>
@@ -1296,7 +771,7 @@
 						data-id="46f399bb" data-element_type="container">
 						<div class="elementor-element elementor-element-2664d3a9 elementor-widget elementor-widget-heading"
 							data-id="2664d3a9" data-element_type="widget" data-widget_type="heading.default">
-							<h2 class="elementor-heading-title elementor-size-default">R$ 87,14</h2>
+							<h2 class="elementor-heading-title elementor-size-default">R$ 167,90</h2>
 						</div>
 						<div class="elementor-element elementor-element-756e000c elementor-widget elementor-widget-image"
 							data-id="756e000c" data-element_type="widget" data-widget_type="image.default">
@@ -1324,7 +799,7 @@
 						data-id="f8fcb58" data-element_type="container">
 						<div class="elementor-element elementor-element-1b3f9b0b elementor-widget elementor-widget-heading"
 							data-id="1b3f9b0b" data-element_type="widget" data-widget_type="heading.default">
-							<h2 class="elementor-heading-title elementor-size-default">R$ 389,99</h2>
+							<h2 class="elementor-heading-title elementor-size-default">R$ 234,90</h2>
 						</div>
 						<div class="elementor-element elementor-element-3e2ac77a elementor-widget elementor-widget-heading"
 							data-id="3e2ac77a" data-element_type="widget" data-widget_type="heading.default">
@@ -1354,7 +829,8 @@
 							data-id="69e352a6" data-element_type="widget" data-widget_type="heading.default">
 							<h2 class="elementor-heading-title elementor-size-default"><span class="promo-do-mes">Promo
 									do Mês</span>
-								<span class="titulo-produto"> Fritadeira Air Fryer Forno Oven 12L, Mondial, Preto/Inox, 2000W + Brinde (QUEIMA DE ESTOQUE)
+								<span class="titulo-produto"> Miniatura Realista de Controle Remoto Caminhão Scania S540
+									6X4 + Carreta de Brinde (QUEIMA DE ESTOQUE)
 								</span>
 							</h2>
 						</div>
@@ -1491,8 +967,8 @@
 								<div class="elementor-element elementor-element-7d2ead02 elementor-widget elementor-widget-image"
 									data-id="7d2ead02" data-element_type="widget" data-widget_type="image.default">
 									<img loading="lazy" decoding="async" width="640" height="640"
-										src="images/profile/profile1.jpg"
-										class="attachment-large size-large wp-image-806" alt=""
+										src="images/profile/profile1.jpg" class="attachment-large size-large wp-image-806"
+										alt=""
 										sizes="(max-width: 640px) 100vw, 640px">
 								</div>
 								<div class="elementor-element elementor-element-27a777d5 elementor-widget elementor-widget-heading"
@@ -1511,8 +987,8 @@
 								data-id="208456e2" data-element_type="container">
 								<div class="elementor-element elementor-element-544ff408 elementor-widget elementor-widget-heading"
 									data-id="544ff408" data-element_type="widget" data-widget_type="heading.default">
-									<h2 class="elementor-heading-title elementor-size-default">Item: Air Fryer Preta +
-										Micro-ondas Compacto
+									<h2 class="elementor-heading-title elementor-size-default">Item: Caminhão Vermelho +
+										Carreta Coca Cola
 									</h2>
 								</div>
 							</div>
@@ -1521,8 +997,8 @@
 							data-id="421725a9" data-element_type="container">
 							<div class="elementor-element elementor-element-668100c9 elementor-widget elementor-widget-heading"
 								data-id="668100c9" data-element_type="widget" data-widget_type="heading.default">
-								<h2 class="elementor-heading-title elementor-size-default">Chegou rapidinho e a Air Fryer
-									é incrível! Comprei para minha cozinha e já estou fazendo comidas saudáveis todos os dias. Muito prática!
+								<h2 class="elementor-heading-title elementor-size-default">Chegou rapidinho e o caminhão
+									é incrível! Comprei para meu filho e ele adorou, já está brincando. Muito realista!
 								</h2>
 							</div>
 							<div class="elementor-element elementor-element-7205cb88 e-con-full e-flex e-con e-child"
@@ -1530,8 +1006,8 @@
 								<div class="elementor-element elementor-element-76f4a9fb elementor-widget elementor-widget-image"
 									data-id="76f4a9fb" data-element_type="widget" data-widget_type="image.default">
 									<img loading="lazy" decoding="async" width="800" height="800"
-										src="https://review-produtos-storage-prd.magalu.com/review/Magalu-Mktplace/magazineluiza/237219500/image/processed/685ede3e181b3e114f9db0f0.jpeg"
-										class="attachment-large size-large wp-image-765" alt="Review Air Fryer - Cliente satisfeito"
+										src="images/reviews/review1.jpg"
+										class="attachment-large size-large wp-image-765" alt=""
 										sizes="(max-width: 800px) 100vw, 800px">
 								</div>
 
@@ -1547,8 +1023,8 @@
 								<div class="elementor-element elementor-element-1e85185c elementor-widget elementor-widget-image"
 									data-id="1e85185c" data-element_type="widget" data-widget_type="image.default">
 									<img loading="lazy" decoding="async" width="640" height="640"
-										src="images/profile/profile3.jpg"
-										class="attachment-large size-large wp-image-809" alt=""
+										src="images/profile/profile3.jpg" class="attachment-large size-large wp-image-809"
+										alt=""
 										sizes="(max-width: 640px) 100vw, 640px">
 								</div>
 								<div class="elementor-element elementor-element-2c8f856e elementor-widget elementor-widget-heading"
@@ -1567,8 +1043,8 @@
 								data-id="21ebcba9" data-element_type="container">
 								<div class="elementor-element elementor-element-70ae9cbf elementor-widget elementor-widget-heading"
 									data-id="70ae9cbf" data-element_type="widget" data-widget_type="heading.default">
-									<h2 class="elementor-heading-title elementor-size-default">Item: Air Fryer Preta +
-										Liquidificador Power
+									<h2 class="elementor-heading-title elementor-size-default">Item: Caminhão Azul +
+										Carreta Sedex
 									</h2>
 								</div>
 							</div>
@@ -1577,8 +1053,8 @@
 							data-id="50678fbe" data-element_type="container">
 							<div class="elementor-element elementor-element-1975b6b elementor-widget elementor-widget-heading"
 								data-id="1975b6b" data-element_type="widget" data-widget_type="heading.default">
-								<h2 class="elementor-heading-title elementor-size-default">Perfeito! A Air Fryer
-									funciona muito bem, comida sem óleo e super crocante. Chegou bem embalada e rápido!
+								<h2 class="elementor-heading-title elementor-size-default">Perfeito! O controle remoto
+									funciona muito bem, caminhão super realista. Chegou bem embalado e rápido!
 								</h2>
 							</div>
 							<div class="elementor-element elementor-element-27b5eeeb e-con-full e-flex e-con e-child"
@@ -1586,8 +1062,8 @@
 								<div class="elementor-element elementor-element-398da474 elementor-widget elementor-widget-image"
 									data-id="398da474" data-element_type="widget" data-widget_type="image.default">
 									<img loading="lazy" decoding="async" width="800" height="800"
-										src="https://review-produtos-storage-prd.magalu.com/review/Magalu-Mktplace/magazineluiza/237219400/image/processed/684ad8bfb87af431811bbb45.jpeg"
-										class="attachment-large size-large wp-image-768" alt="Review Air Fryer - Experiência cliente"
+										src="images/reviews/review3.jpg"
+										class="attachment-large size-large wp-image-768" alt=""
 										sizes="(max-width: 800px) 100vw, 800px">
 								</div>
 
@@ -1603,8 +1079,8 @@
 								<div class="elementor-element elementor-element-4d2012ed elementor-widget elementor-widget-image"
 									data-id="4d2012ed" data-element_type="widget" data-widget_type="image.default">
 									<img loading="lazy" decoding="async" width="640" height="640"
-										src="images/profile/profile5.jpg"
-										class="attachment-large size-large wp-image-811" alt=""
+										src="images/profile/profile5.jpg" class="attachment-large size-large wp-image-811"
+										alt=""
 										sizes="(max-width: 640px) 100vw, 640px">
 								</div>
 								<div class="elementor-element elementor-element-5b743eec elementor-widget elementor-widget-heading"
@@ -1645,15 +1121,15 @@
 								<div class="elementor-element elementor-element-52584b5e elementor-widget elementor-widget-image"
 									data-id="52584b5e" data-element_type="widget" data-widget_type="image.default">
 									<img loading="lazy" decoding="async" width="800" height="800"
-										src="https://review-produtos-storage-prd.magalu.com/review/Magalu-Mktplace/magazineluiza/237219500/image/processed/68700efb770e12700fe2ecf6.jpeg"
-										class="attachment-large size-large wp-image-771" alt="Review Air Fryer - Qualidade aprovada"
+										src="images/reviews/review5.jpg"
+										class="attachment-large size-large wp-image-771" alt=""
 										sizes="(max-width: 800px) 100vw, 800px">
 								</div>
 								<div class="elementor-element elementor-element-2b8dd304 elementor-widget elementor-widget-image"
 									data-id="2b8dd304" data-element_type="widget" data-widget_type="image.default">
 									<img loading="lazy" decoding="async" width="800" height="800"
-										src="https://review-produtos-storage-prd.magalu.com/review/Magalu-Mktplace/magazineluiza/237219400/image/processed/684ad8c0b87af431811bbb46.jpeg"
-										class="attachment-large size-large wp-image-772" alt="Review Air Fryer - Recomendação cliente"
+										src="images/reviews/review6.jpg"
+										class="attachment-large size-large wp-image-772" alt=""
 										sizes="(max-width: 800px) 100vw, 800px">
 								</div>
 
@@ -1669,8 +1145,8 @@
 								<div class="elementor-element elementor-element-336cc860 elementor-widget elementor-widget-image"
 									data-id="336cc860" data-element_type="widget" data-widget_type="image.default">
 									<img loading="lazy" decoding="async" width="640" height="640"
-										src="images/profile/profile2.jpg"
-										class="attachment-large size-large wp-image-814" alt=""
+										src="images/profile/profile2.jpg" class="attachment-large size-large wp-image-814"
+										alt=""
 										sizes="(max-width: 640px) 100vw, 640px">
 								</div>
 								<div class="elementor-element elementor-element-76e53078 elementor-widget elementor-widget-heading"
@@ -1690,10 +1166,10 @@
 								<div class="elementor-element elementor-element-5904e203 elementor-widget elementor-widget-heading"
 									data-id="5904e203" data-element_type="widget" data-widget_type="heading.default">
 									<h2 class="elementor-heading-title elementor-size-default">Item: <span
-											style="letter-spacing: -0.084px;text-align: var(--text-align)">Air Fryer
+											style="letter-spacing: -0.084px;text-align: var(--text-align)">Caminhão
 										</span><span
-											style="letter-spacing: -0.084px;text-align: var(--text-align)">Preta +
-											Mixer 3 em 1</span>
+											style="letter-spacing: -0.084px;text-align: var(--text-align)">Branco +
+											Carreta Heineken</span>
 									</h2>
 								</div>
 							</div>
@@ -1702,8 +1178,8 @@
 							data-id="10291a23" data-element_type="container">
 							<div class="elementor-element elementor-element-35c84df2 elementor-widget elementor-widget-heading"
 								data-id="35c84df2" data-element_type="widget" data-widget_type="heading.default">
-								<h2 class="elementor-heading-title elementor-size-default">Achei excelente, eu estava
-									muito ansiosa pra receber e saber como era, simplesmente amei a Air Fryer....
+								<h2 class="elementor-heading-title elementor-size-default">Achei excelente, eu tava
+									muito ansioso pra receber e saber como era, simplesmente amei o caminhão....
 								</h2>
 							</div>
 							<div class="elementor-element elementor-element-5f80ce5e e-con-full e-flex e-con e-child"
@@ -1711,8 +1187,8 @@
 								<div class="elementor-element elementor-element-7789e440 elementor-widget elementor-widget-image"
 									data-id="7789e440" data-element_type="widget" data-widget_type="image.default">
 									<img loading="lazy" decoding="async" width="800" height="800"
-										src="https://review-produtos-storage-prd.magalu.com/review/Magalu-Mktplace/magazineluiza/237219400/image/processed/684dff6a6bc5f660d50e0bcf.jpeg"
-										class="attachment-large size-large wp-image-775" alt="Review Air Fryer - Avaliação produto"
+										src="images/reviews/review2.jpg"
+										class="attachment-large size-large wp-image-775" alt=""
 										sizes="(max-width: 800px) 100vw, 800px">
 								</div>
 
@@ -1728,8 +1204,8 @@
 								<div class="elementor-element elementor-element-745b0f29 elementor-widget elementor-widget-image"
 									data-id="745b0f29" data-element_type="widget" data-widget_type="image.default">
 									<img loading="lazy" decoding="async" width="640" height="640"
-										src="images/profile/profile4.jpg"
-										class="attachment-large size-large wp-image-816" alt=""
+										src="images/profile/profile4.jpg" class="attachment-large size-large wp-image-816"
+										alt=""
 										sizes="(max-width: 640px) 100vw, 640px">
 								</div>
 								<div class="elementor-element elementor-element-3a4d4463 elementor-widget elementor-widget-heading"
@@ -1749,10 +1225,10 @@
 								<div class="elementor-element elementor-element-72343b1e elementor-widget elementor-widget-heading"
 									data-id="72343b1e" data-element_type="widget" data-widget_type="heading.default">
 									<h2 class="elementor-heading-title elementor-size-default">Item: <span
-											style="letter-spacing: -0.084px;text-align: var(--text-align)">Air Fryer
+											style="letter-spacing: -0.084px;text-align: var(--text-align)">Caminhão
 										</span><span
-											style="letter-spacing: -0.084px;text-align: var(--text-align)">Preta +
-											Sanduicheira Grill</span>
+											style="letter-spacing: -0.084px;text-align: var(--text-align)">Preto +
+											Carreta Coca Cola</span>
 									</h2>
 								</div>
 							</div>
@@ -1769,8 +1245,8 @@
 								<div class="elementor-element elementor-element-574c64ad elementor-widget elementor-widget-image"
 									data-id="574c64ad" data-element_type="widget" data-widget_type="image.default">
 									<img loading="lazy" decoding="async" width="800" height="800"
-										src="https://review-produtos-storage-prd.magalu.com/review/Magalu-Mktplace/magazineluiza/237219500/image/processed/684324d0dc04105335fa612e.jpeg"
-										class="attachment-large size-large wp-image-778" alt="Review Air Fryer - Feedback positivo"
+										src="images/reviews/review4.jpg"
+										class="attachment-large size-large wp-image-778" alt=""
 										sizes="(max-width: 800px) 100vw, 800px">
 								</div>
 
@@ -1792,9 +1268,10 @@
 					data-id="2b55c80a" data-element_type="container">
 					<div class="elementor-element elementor-element-598e88ca elementor-widget elementor-widget-image"
 						data-id="598e88ca" data-element_type="widget" data-widget_type="image.default">
-						<img loading="lazy" decoding="async" width="488" height="488" src="images/logo_tiktok.jpg"
-							class="attachment-full size-full wp-image-781" alt=""
-							srcset="images/logo_tiktok.jpg 488w, images/logo_tiktok.jpg 300w, images/logo_tiktok.jpg 150w"
+						<img loading="lazy" decoding="async" width="488" height="488"
+							src="images/logo tiktok.jpg" class="attachment-full size-full wp-image-781"
+							alt=""
+							srcset="images/logo tiktok.jpg 488w, images/logo tiktok.jpg 300w, images/logo tiktok.jpg 150w"
 							sizes="(max-width: 488px) 100vw, 488px">
 					</div>
 				</div>
@@ -1802,7 +1279,7 @@
 					data-id="4aaa2682" data-element_type="container">
 					<div class="elementor-element elementor-element-3bc4fbe3 elementor-widget elementor-widget-heading"
 						data-id="3bc4fbe3" data-element_type="widget" data-widget_type="heading.default">
-													<h2 class="elementor-heading-title elementor-size-default">Magalu <span style="color: #1DA1F2; font-size: 0.8em;">✅</span></h2>
+						<h2 class="elementor-heading-title elementor-size-default">Miniaturas RC</h2>
 					</div>
 					<div class="elementor-element elementor-element-229efa46 elementor-widget elementor-widget-heading"
 						data-id="229efa46" data-element_type="widget" data-widget_type="heading.default">
@@ -1843,19 +1320,20 @@
 					data-id="51d59cef" data-element_type="container">
 					<div class="elementor-element elementor-element-68a11dc0 elementor-widget elementor-widget-heading"
 						data-id="68a11dc0" data-element_type="widget" data-widget_type="heading.default">
-						<h2 class="elementor-heading-title elementor-size-default">Fritadeira Air Fryer Forno Oven 12L da Mondial. 2 em 1: Air Fryer + Forno. Capacidade de 12 litros, tecnologia de circulação de ar quente e 10 funções pré-definidas. QUEIMA DE ESTOQUE - Últimas unidades!
+						<h2 class="elementor-heading-title elementor-size-default">Miniatura realista de controle remoto
+							do famoso Caminhão Scania S540 6X4. Produto de alta qualidade com detalhes incríveis e
+							controle remoto funcional. QUEIMA DE ESTOQUE - Últimas unidades!
 
 							<br><br>
 
 							<span style="font-weight: 500">Características:</span><br><br>
 
-							• Capacidade total de 12 litros<br>
-							• Tecnologia de circulação de ar quente<br>
-							• 10 funções pré-definidas<br>
-							• Antiaderente Duraflon<br>
-							• Potência de 2000W<br>
-							• Cor preta elegante<br>
-							• Brinde especial incluso
+							• Miniatura super realista do Scania S540 6X4<br>
+							• Controle remoto com múltiplas funções<br>
+							• Disponível em 5 cores diferentes<br>
+							• Carreta de brinde inclusa<br>
+							• Material resistente e durável<br>
+							• Ideal para colecionadores e entusiastas de caminhões
 						</h2>
 					</div>
 				</div>
@@ -1876,35 +1354,35 @@
 					<div class="elementor-element elementor-element-12a20016 elementor-widget elementor-widget-heading"
 						data-id="12a20016" data-element_type="widget" data-widget_type="heading.default">
 						<h2 class="elementor-heading-title elementor-size-default"><a
-								href="politicas-privacidade.html">Políticas de Privacidade</a></h2>
+								href="https://papelariaparapintar.com/privacidade/">Políticas de Privacidade</a></h2>
 					</div>
 					<div class="elementor-element elementor-element-36ab217b elementor-widget elementor-widget-heading"
 						data-id="36ab217b" data-element_type="widget" data-widget_type="heading.default">
 						<h2 class="elementor-heading-title elementor-size-default"><a
-								href="termos-de-uso.html">Termos de Uso</a></h2>
+								href="https://papelariaparapintar.com/uso/">Termos de Uso</a></h2>
 					</div>
 					<div class="elementor-element elementor-element-a925fd9 elementor-widget elementor-widget-heading"
 						data-id="a925fd9" data-element_type="widget" data-widget_type="heading.default">
 						<h2 class="elementor-heading-title elementor-size-default"><a
-								href="politicas-reembolso.html">Políticas de Reembolso</a></h2>
+								href="https://papelariaparapintar.com/reembolso/">Políticas de Reembolso</a></h2>
 					</div>
 					<div class="elementor-element elementor-element-7186f06a elementor-widget elementor-widget-heading"
 						data-id="7186f06a" data-element_type="widget" data-widget_type="heading.default">
 						<h2 class="elementor-heading-title elementor-size-default"><a
-								href="fale-conosco.html">Fale Conosco</a></h2>
+								href="https://papelariaparapintar.com/contato/">Fale Conosco</a></h2>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="elementor-element elementor-element-64374584 e-flex e-con-boxed e-con e-parent barra-fixa-inferior"
-			data-id="64374584" data-element_type="container" data-settings="{"
+		<div class="elementor-element elementor-element-64374584 e-flex e-con-boxed e-con e-parent barra-fixa-inferior" data-id="64374584"
+			data-element_type="container" data-settings="{"
 			background_background":"classic","sticky":"bottom","sticky_on":["desktop","tablet","mobile"],"sticky_offset":0,"sticky_effects_offset":0,"sticky_anchor_link_offset":0}"="">
 			<div class="e-con-inner">
 				<div class="elementor-element elementor-element-3bb0fe7d e-con-full e-flex e-con e-child"
 					data-id="3bb0fe7d" data-element_type="container">
 					<div class="elementor-element elementor-element-62ecac5b elementor-widget elementor-widget-image"
 						data-id="62ecac5b" data-element_type="widget" data-widget_type="image.default">
-						<a class="popup-trigger"
+						<a
 							href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjcwMCIsInRvZ2dsZSI6ZmFsc2V9">
 							<img loading="lazy" decoding="async" width="24" height="24" src="images/store-2-line-2.svg"
 								class="attachment-large size-large wp-image-824" alt=""> </a>
@@ -1939,7 +1417,7 @@
 					</div>
 					<div class="elementor-element elementor-element-17cc6c37 elementor-mobile-align-justify elementor-widget elementor-widget-button"
 						data-id="17cc6c37" data-element_type="widget" data-widget_type="button.default">
-						<a class="elementor-button elementor-button-link elementor-size-sm popup-trigger"
+						<a class="elementor-button elementor-button-link elementor-size-sm"
 							href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjcwMCIsInRvZ2dsZSI6ZmFsc2V9">
 							<span class="elementor-button-content-wrapper">
 								<span class="elementor-button-text">Comprar Agora</span>
@@ -1961,9 +1439,10 @@
 			</div>
 		</div>
 	</footer>
-
+	
 	<script src="js/sticky-nav.js"></script>
 	<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/hello-elementor\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
 </script>
 	<script>
 			}
@@ -1973,13 +1452,14 @@
 		}
 	</script>
 	<style>
-		body:after {
-			content: "You are not allowed to print preview this page, Thank you";
-		}
+
+			body:after {
+				content: "You are not allowed to print preview this page, Thank you";
+			}
 		}
 	</style>
 	<style type="text/css">
-		background: #ffecec url('images/warning.png') no-repeat 10px 50%;
+			background: #ffecec url('images/warning.png') no-repeat 10px 50%;
 		}
 
 		/* Forçar layout horizontal para os botões das carretas */
@@ -2064,105 +1544,6 @@
 	</style>
 	<script src="js/product-selector.js"></script>
 	<!-- O código antigo foi substituído pelo arquivo product-selector.js que implementa o sistema de seleção única -->
-
-	<!-- CSS para forçar popups a ficarem invisíveis -->
-	<style>
-		/* FORÇAR TODOS OS POPUPS A FICAREM INVISÍVEIS */
-		[data-elementor-type="popup"],
-		.elementor-popup-modal,
-		.elementor-popup-overlay,
-		.elementor-location-popup {
-			display: none !important;
-			visibility: hidden !important;
-			opacity: 0 !important;
-			pointer-events: none !important;
-			position: absolute !important;
-			left: -9999px !important;
-			top: -9999px !important;
-			width: 0 !important;
-			height: 0 !important;
-			overflow: hidden !important;
-		}
-
-		/* Garantir que o body não tenha overflow hidden por causa de popups */
-		body {
-			overflow: auto !important;
-		}
-
-		html {
-			overflow: auto !important;
-		}
-
-		/* GARANTIR QUE O SLIDER FUNCIONE CORRETAMENTE */
-		.e-n-carousel.swiper {
-			width: 100% !important;
-			height: auto !important;
-			overflow: hidden !important;
-			position: relative !important;
-		}
-
-		.swiper-wrapper {
-			display: flex !important;
-			transition-property: transform !important;
-			box-sizing: content-box !important;
-		}
-
-		.swiper-slide {
-			flex-shrink: 0 !important;
-			width: 100% !important;
-			height: auto !important;
-			position: relative !important;
-			transition-property: transform !important;
-		}
-
-		.swiper-slide img {
-			width: 100% !important;
-			height: auto !important;
-			display: block !important;
-			object-fit: cover !important;
-		}
-
-		.swiper-pagination {
-			position: relative !important;
-			margin-top: 10px !important;
-			text-align: center !important;
-		}
-
-		.swiper-pagination-bullet {
-			width: 12px !important;
-			height: 12px !important;
-			background: #ccc !important;
-			border-radius: 50% !important;
-			margin: 0 5px !important;
-			cursor: pointer !important;
-			transition: background 0.3s ease !important;
-		}
-
-		.swiper-pagination-bullet-active {
-			background: #ff4757 !important;
-		}
-
-		/* Garantir que as imagens do slider sejam visíveis */
-		.elementor-element[data-id="7122c68a"] {
-			display: block !important;
-			visibility: visible !important;
-			opacity: 1 !important;
-		}
-
-		.elementor-element[data-id="7122c68a"] .swiper-slide {
-			display: block !important;
-			visibility: visible !important;
-			opacity: 1 !important;
-		}
-
-		.elementor-element[data-id="7122c68a"] img {
-			display: block !important;
-			visibility: visible !important;
-			opacity: 1 !important;
-			max-width: 100% !important;
-			height: auto !important;
-		}
-	</style>
 	<div data-elementor-type="popup" data-elementor-id="700" class="elementor elementor-700 elementor-location-popup"
 		data-elementor-settings="{"
 		prevent_close_on_background_click":"yes","prevent_close_on_esc_key":"yes","prevent_scroll":"yes","avoid_multiple_popups":"yes","a11y_navigation":"yes","triggers":[],"timing":[]}"=""
@@ -2178,9 +1559,9 @@
 						<div class="elementor-element elementor-element-546f2fd3 elementor-widget elementor-widget-image"
 							data-id="546f2fd3" data-element_type="widget" data-widget_type="image.default">
 							<img id="main-product-image" width="640" height="640"
-								src="images/airfryer-principal.png"
-								class="attachment-large size-large wp-image-687" alt="Air Fryer Principal"
-								srcset="images/airfryer-principal.png 640w"
+								src="https://centraldacompra.shop/cdn/shop/files/ChatGPT_Image_25_de_jun._de_2025_00_24_44_1024x.png?v=1752783302"
+								class="attachment-large size-large wp-image-687" alt="Caminhão Azul"
+								srcset="https://centraldacompra.shop/cdn/shop/files/ChatGPT_Image_25_de_jun._de_2025_00_24_44_1024x.png?v=1752783302 640w"
 								sizes="(max-width: 640px) 100vw, 640px">
 						</div>
 					</div>
@@ -2195,7 +1576,7 @@
 									<div class="elementor-element elementor-element-6a66f57e elementor-widget elementor-widget-heading"
 										data-id="6a66f57e" data-element_type="widget"
 										data-widget_type="heading.default">
-										<h2 class="elementor-heading-title elementor-size-default">R$ 87,14</h2>
+										<h2 class="elementor-heading-title elementor-size-default">R$ 167,90</h2>
 									</div>
 									<div class="elementor-element elementor-element-5dea6dc5 elementor-widget elementor-widget-image"
 										data-id="5dea6dc5" data-element_type="widget" data-widget_type="image.default">
@@ -2218,11 +1599,11 @@
 								data-id="612b9e13" data-element_type="container">
 								<div class="elementor-element elementor-element-30c45e17 elementor-widget elementor-widget-heading"
 									data-id="30c45e17" data-element_type="widget" data-widget_type="heading.default">
-									<h2 class="elementor-heading-title elementor-size-default">R$ 389,99</h2>
+									<h2 class="elementor-heading-title elementor-size-default">R$ 234,90</h2>
 								</div>
 								<div class="elementor-element elementor-element-68b15ff7 elementor-widget elementor-widget-heading"
 									data-id="68b15ff7" data-element_type="widget" data-widget_type="heading.default">
-									<h2 class="elementor-heading-title elementor-size-default">-78%</h2>
+									<h2 class="elementor-heading-title elementor-size-default">-55%</h2>
 								</div>
 							</div>
 							<div class="elementor-element elementor-element-58b3e478 e-con-full e-flex e-con e-child"
@@ -2237,7 +1618,8 @@
 							data-id="144d1f79" data-element_type="container">
 							<div class="elementor-element elementor-element-6ca37c87 elementor-widget elementor-widget-heading"
 								data-id="6ca37c87" data-element_type="widget" data-widget_type="heading.default">
-														<h2 class="elementor-heading-title elementor-size-default">Fritadeira Air Fryer Forno Oven 12L, Mondial, Preto/Inox, 2000W + Brinde Especial (QUEIMA DE ESTOQUE)
+								<h2 class="elementor-heading-title elementor-size-default">Miniatura Realista de
+									Controle Remoto Caminhão Scania S540 6X4 + Carreta de Brinde (QUEIMA DE ESTOQUE)
 								</h2>
 							</div>
 						</div>
@@ -2254,10 +1636,7 @@
 					</div>
 					<div class="elementor-element elementor-element-571a5629 e-con-full e-flex e-con e-child"
 						data-id="571a5629" data-element_type="container">
-<<<<<<< HEAD
-						<div class="elementor-element elementor-element-16f74f26 elementor-mobile-align-center elementor-widget-active elementor-widget elementor-widget-button"
-=======
-						<div class="elementor-element elementor-element-5273f5f8 elementor-mobile-align-center elementor-widget elementor-widget-button"
+						<div class="elementor-element elementor-element-5273f5f8 elementor-mobile-align-center botao-desabilitado elementor-widget elementor-widget-button"
 							data-id="5273f5f8" data-element_type="widget" data-widget_type="button.default">
 							<a class="elementor-button elementor-button-link elementor-size-sm" href="#"
 								onclick="changeProductImage('vermelho')">
@@ -2275,7 +1654,7 @@
 								</span>
 							</a>
 						</div>
-						<div class="elementor-element elementor-element-3f138008 elementor-mobile-align-center elementor-widget elementor-widget-button"
+						<div class="elementor-element elementor-element-3f138008 elementor-mobile-align-center botao-desabilitado elementor-widget elementor-widget-button"
 							data-id="3f138008" data-element_type="widget" data-widget_type="button.default">
 							<a class="elementor-button elementor-button-link elementor-size-sm" href="#"
 								onclick="changeProductImage('verde')">
@@ -2284,7 +1663,7 @@
 								</span>
 							</a>
 						</div>
-						<div class="elementor-element elementor-element-1e814c5b elementor-mobile-align-center elementor-widget elementor-widget-button"
+						<div class="elementor-element elementor-element-1e814c5b elementor-mobile-align-center botao-desabilitado elementor-widget elementor-widget-button"
 							data-id="1e814c5b" data-element_type="widget" data-widget_type="button.default">
 							<a class="elementor-button elementor-button-link elementor-size-sm" href="#"
 								onclick="changeProductImage('branco')">
@@ -2293,8 +1672,7 @@
 								</span>
 							</a>
 						</div>
-						<div class="elementor-element elementor-element-16f74f26 elementor-mobile-align-center elementor-widget elementor-widget-button"
->>>>>>> 5a165e71bb68985defa080ce0f066adada7c1b01
+						<div class="elementor-element elementor-element-16f74f26 elementor-mobile-align-center botao-desabilitado elementor-widget elementor-widget-button"
 							data-id="16f74f26" data-element_type="widget" data-widget_type="button.default">
 							<a class="elementor-button elementor-button-link elementor-size-sm" href="#"
 								onclick="changeProductImage('preto')">
@@ -2311,14 +1689,14 @@
 						data-id="7516f890" data-element_type="container">
 						<div class="elementor-element elementor-element-2e393d4d elementor-widget elementor-widget-heading"
 							data-id="2e393d4d" data-element_type="widget" data-widget_type="heading.default">
-							<h2 class="elementor-heading-title elementor-size-default">Brinde especial</h2>
+							<h2 class="elementor-heading-title elementor-size-default">Carreta de brinde</h2>
 						</div>
 						<!-- Adicionando imagem para visualização da carreta -->
 						<div class="elementor-element elementor-widget elementor-widget-image">
-							<img id="brinde-preview-image" width="320" height="320"
-								src="https://imgs.casasbahia.com.br/55065338/1g.jpg"
-								class="attachment-medium size-medium wp-image-688" alt="Micro-ondas Compacto"
-								srcset="https://imgs.casasbahia.com.br/55065338/1g.jpg 320w"
+							<img id="carreta-preview-image" width="320" height="320"
+								src="https://centraldacompra.shop/cdn/shop/files/ChatGPT_Image_25_de_jun._de_2025_01_07_21_1024x.png?v=1752783303"
+								class="attachment-medium size-medium wp-image-688" alt="Carreta Coca Cola"
+								srcset="https://centraldacompra.shop/cdn/shop/files/ChatGPT_Image_25_de_jun._de_2025_01_07_21_1024x.png?v=1752783303 320w"
 								sizes="(max-width: 320px) 100vw, 320px">
 						</div>
 					</div>
@@ -2327,54 +1705,45 @@
 						<div class="elementor-element elementor-element-5273f5f9 elementor-mobile-align-center elementor-widget-active elementor-widget elementor-widget-button"
 							data-id="5273f5f9" data-element_type="widget" data-widget_type="button.default">
 							<a class="elementor-button elementor-button-link elementor-size-sm" href="#"
-								onclick="changeBrindeImage('microondas')">
+								onclick="changeCarretaImage('coca')">
 								<span class="elementor-button-content-wrapper">
-									<span class="elementor-button-text">Micro-ondas</span>
+									<span class="elementor-button-text">Coca Cola</span>
 								</span>
 							</a>
 						</div>
-						<div class="elementor-element elementor-element-55f648ff elementor-mobile-align-center elementor-widget elementor-widget-button"
+						<div class="elementor-element elementor-element-55f648ff elementor-mobile-align-center botao-desabilitado elementor-widget elementor-widget-button"
 							data-id="55f648ff" data-element_type="widget" data-widget_type="button.default">
 							<a class="elementor-button elementor-button-link elementor-size-sm" href="#"
-								onclick="changeBrindeImage('liquidificador')">
+								onclick="changeCarretaImage('sedex')">
 								<span class="elementor-button-content-wrapper">
-									<span class="elementor-button-text">Liquidificador</span>
+									<span class="elementor-button-text">Sedex</span>
 								</span>
 							</a>
 						</div>
-						<div class="elementor-element elementor-element-3f138009 elementor-mobile-align-center elementor-widget elementor-widget-button"
+						<div class="elementor-element elementor-element-3f138009 elementor-mobile-align-center botao-desabilitado elementor-widget elementor-widget-button"
 							data-id="3f138009" data-element_type="widget" data-widget_type="button.default">
 							<a class="elementor-button elementor-button-link elementor-size-sm" href="#"
-								onclick="changeBrindeImage('mixer')">
+								onclick="changeCarretaImage('heineken')">
 								<span class="elementor-button-content-wrapper">
-									<span class="elementor-button-text">Mixer 3 em 1</span>
+									<span class="elementor-button-text">Heineken</span>
 								</span>
 							</a>
 						</div>
-						<div class="elementor-element elementor-element-1e814c5c elementor-mobile-align-center elementor-widget elementor-widget-button"
+						<div class="elementor-element elementor-element-1e814c5c elementor-mobile-align-center botao-desabilitado elementor-widget elementor-widget-button"
 							data-id="1e814c5c" data-element_type="widget" data-widget_type="button.default">
 							<a class="elementor-button elementor-button-link elementor-size-sm" href="#"
-								onclick="changeBrindeImage('sanduicheira')">
+								onclick="changeCarretaImage('skol')">
 								<span class="elementor-button-content-wrapper">
-									<span class="elementor-button-text">Sanduicheira</span>
+									<span class="elementor-button-text">Skol</span>
 								</span>
 							</a>
 						</div>
-						<div class="elementor-element elementor-element-16f74f27 elementor-mobile-align-center elementor-widget elementor-widget-button"
+						<div class="elementor-element elementor-element-16f74f27 elementor-mobile-align-center botao-desabilitado elementor-widget elementor-widget-button"
 							data-id="16f74f27" data-element_type="widget" data-widget_type="button.default">
 							<a class="elementor-button elementor-button-link elementor-size-sm" href="#"
-								onclick="changeBrindeImage('panela')">
+								onclick="changeCarretaImage('casas')">
 								<span class="elementor-button-content-wrapper">
-									<span class="elementor-button-text">Panela Arroz</span>
-								</span>
-							</a>
-						</div>
-						<div class="elementor-element elementor-element-16f74f28 elementor-mobile-align-center elementor-widget elementor-widget-button"
-							data-id="16f74f28" data-element_type="widget" data-widget_type="button.default">
-							<a class="elementor-button elementor-button-link elementor-size-sm" href="#"
-								onclick="changeBrindeImage('cafeteira')">
-								<span class="elementor-button-content-wrapper">
-									<span class="elementor-button-text">Cafeteira</span>
+									<span class="elementor-button-text">Casas Bahia</span>
 								</span>
 							</a>
 						</div>
@@ -2660,7 +2029,7 @@
 								</span>
 							</a>
 						</div>
-						<div class="elementor-element elementor-element-6983ec24 elementor-mobile-align-center elementor-widget elementor-widget-button"
+						<div class="elementor-element elementor-element-6983ec24 elementor-mobile-align-center botao-desabilitado elementor-widget elementor-widget-button"
 							data-id="6983ec24" data-element_type="widget" id="botao-desabilitado"
 							data-widget_type="button.default">
 							<a class="elementor-button elementor-button-link elementor-size-sm" href="#">
@@ -2669,7 +2038,7 @@
 								</span>
 							</a>
 						</div>
-						<div class="elementor-element elementor-element-6c074978 elementor-mobile-align-center elementor-widget elementor-widget-button"
+						<div class="elementor-element elementor-element-6c074978 elementor-mobile-align-center botao-desabilitado elementor-widget elementor-widget-button"
 							data-id="6c074978" data-element_type="widget" data-widget_type="button.default">
 							<a class="elementor-button elementor-button-link elementor-size-sm" href="#">
 								<span class="elementor-button-content-wrapper">
@@ -2785,7 +2154,7 @@
 					</div>
 					<div class="elementor-element elementor-element-6646e50 e-con-full e-flex e-con e-child"
 						data-id="6646e50" data-element_type="container">
-						<div class="elementor-element elementor-element-f2f816b elementor-mobile-align-center elementor-widget elementor-widget-button"
+						<div class="elementor-element elementor-element-f2f816b elementor-mobile-align-center botao-desabilitado elementor-widget elementor-widget-button"
 							data-id="f2f816b" data-element_type="widget" id="botao-desabilitado"
 							data-widget_type="button.default">
 							<a class="elementor-button elementor-button-link elementor-size-sm" href="#">
@@ -2794,7 +2163,7 @@
 								</span>
 							</a>
 						</div>
-						<div class="elementor-element elementor-element-2888f1f elementor-mobile-align-center elementor-widget elementor-widget-button"
+						<div class="elementor-element elementor-element-2888f1f elementor-mobile-align-center botao-desabilitado elementor-widget elementor-widget-button"
 							data-id="2888f1f" data-element_type="widget" data-widget_type="button.default">
 							<a class="elementor-button elementor-button-link elementor-size-sm" href="#">
 								<span class="elementor-button-content-wrapper">
@@ -2802,7 +2171,7 @@
 								</span>
 							</a>
 						</div>
-						<div class="elementor-element elementor-element-e077e17 elementor-mobile-align-center elementor-widget elementor-widget-button"
+						<div class="elementor-element elementor-element-e077e17 elementor-mobile-align-center botao-desabilitado elementor-widget elementor-widget-button"
 							data-id="e077e17" data-element_type="widget" id="botao-desabilitado"
 							data-widget_type="button.default">
 							<a class="elementor-button elementor-button-link elementor-size-sm" href="#">
@@ -2811,7 +2180,7 @@
 								</span>
 							</a>
 						</div>
-						<div class="elementor-element elementor-element-55cfa36 elementor-mobile-align-center elementor-widget elementor-widget-button"
+						<div class="elementor-element elementor-element-55cfa36 elementor-mobile-align-center botao-desabilitado elementor-widget elementor-widget-button"
 							data-id="55cfa36" data-element_type="widget" data-widget_type="button.default">
 							<a class="elementor-button elementor-button-link elementor-size-sm" href="#">
 								<span class="elementor-button-content-wrapper">
@@ -3042,709 +2411,10 @@
 	<script src="js/frontend.min_1.js" id="elementor-pro-frontend-js"></script>
 	<script src="js/elements-handlers.min.js" id="pro-elements-handlers-js"></script>
 
-	<!-- Script para gerenciar o popup manualmente -->
-	<script>
-		document.addEventListener('DOMContentLoaded', function () {
-			// Função para mostrar o popup
-			function showPopup(popupId) {
-				var popup = document.querySelector('[data-elementor-id="' + popupId + '"]');
-				if (popup) {
 
-					// Garantir que o popup seja totalmente visível
-					popup.style.display = 'block';
-					popup.style.visibility = 'visible';
-					popup.style.opacity = '1';
-					popup.style.zIndex = '99999';
 
-					// Criar o overlay do popup
-					var overlay = document.createElement('div');
-					overlay.className = 'elementor-popup-modal';
-					overlay.style.position = 'fixed';
-					overlay.style.top = '0';
-					overlay.style.left = '0';
-					overlay.style.width = '100%';
-					overlay.style.height = '100%';
-					overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
-					overlay.style.zIndex = '99999';
-					overlay.style.display = 'flex';
-					overlay.style.alignItems = 'center';
-					overlay.style.justifyContent = 'center';
-					overlay.style.overflow = 'auto';
-					overlay.style.padding = '15px';
-					document.body.appendChild(overlay);
 
-					// Adicionar o popup ao overlay
-					overlay.appendChild(popup);
-
-					// Desabilitar o scroll da página
-					document.documentElement.style.overflow = 'hidden';
-					document.body.style.overflow = 'hidden';
-
-					// Garantir que os elementos internos do popup estejam visíveis
-					recursiveForceVisibility(popup);
-
-					// Forçar exibição de todos os elementos importantes do popup
-					var importantElements = popup.querySelectorAll('.elementor-element, .elementor-widget, .elementor-button, img, .elementor-heading-title');
-					importantElements.forEach(function (element) {
-						element.style.display = element.tagName.toLowerCase() === 'div' ? 'block' : '';
-						element.style.visibility = 'visible';
-						element.style.opacity = '1';
-					});
-
-					// Formatar o container principal do popup
-					var containerInner = popup.querySelector('.e-con-inner');
-					if (containerInner) {
-						containerInner.style.width = '100%';
-						containerInner.style.maxWidth = '100%';
-						containerInner.style.margin = '0';
-						containerInner.style.padding = '0';
-						containerInner.style.backgroundColor = 'white';
-						containerInner.style.display = 'block';
-						containerInner.style.visibility = 'visible';
-						containerInner.style.opacity = '1';
-						containerInner.style.height = 'auto';
-						containerInner.style.minHeight = '100vh';
-						containerInner.style.borderRadius = '0';
-						containerInner.style.overflowY = 'auto';
-					}
-
-					// Ajustar cabeçalho
-					var header = popup.querySelector('[data-id="620c20f7"]');
-					if (header) {
-						header.style.position = 'sticky';
-						header.style.top = '0';
-						header.style.zIndex = '10';
-						header.style.backgroundColor = 'white';
-						header.style.display = 'flex';
-						header.style.flexDirection = 'row';
-						header.style.alignItems = 'center';
-						header.style.justifyContent = 'space-between';
-						header.style.width = '100%';
-						header.style.visibility = 'visible';
-						header.style.opacity = '1';
-					}
-
-					// Ajustar botão de fechar
-					var closeBtn = popup.querySelector('[data-id="3899d286"]');
-					if (closeBtn) {
-						closeBtn.style.position = 'relative';
-						closeBtn.style.display = 'block';
-						closeBtn.style.visibility = 'visible';
-						closeBtn.style.opacity = '1';
-						closeBtn.style.zIndex = '10000';
-					}
-
-					// Garantir que as seções de seleção de cores e carretas estejam visíveis
-					var colorSection = popup.querySelector('[data-id="571a5629"]');
-					if (colorSection) {
-						colorSection.style.display = 'flex';
-						colorSection.style.flexWrap = 'wrap';
-						colorSection.style.justifyContent = 'flex-start';
-						colorSection.style.gap = '10px';
-						colorSection.style.padding = '0 20px 20px 20px';
-						colorSection.style.visibility = 'visible';
-						colorSection.style.opacity = '1';
-					}
-
-					var carretaSection = popup.querySelector('[data-id="571a5630"]');
-					if (carretaSection) {
-						carretaSection.style.display = 'flex';
-						carretaSection.style.flexWrap = 'wrap';
-						carretaSection.style.justifyContent = 'flex-start';
-						carretaSection.style.gap = '10px';
-						carretaSection.style.padding = '0 20px 20px 20px';
-						carretaSection.style.visibility = 'visible';
-						carretaSection.style.opacity = '1';
-					}
-
-					// Garantir que o botão de compra esteja visível
-					var stickyButton = popup.querySelector('.sticky-butao');
-					if (stickyButton) {
-						stickyButton.style.position = 'sticky';
-						stickyButton.style.bottom = '0';
-						stickyButton.style.backgroundColor = 'white';
-						stickyButton.style.padding = '15px 20px';
-						stickyButton.style.boxShadow = '0 -2px 10px rgba(0,0,0,0.1)';
-						stickyButton.style.zIndex = '100';
-						stickyButton.style.width = '100%';
-						stickyButton.style.display = 'block';
-						stickyButton.style.visibility = 'visible';
-						stickyButton.style.opacity = '1';
-
-						var buyButton = stickyButton.querySelector('.elementor-button');
-						if (buyButton) {
-							buyButton.style.backgroundColor = '#ff4757';
-							buyButton.style.color = '#ffffff';
-							buyButton.style.borderRadius = '30px';
-							buyButton.style.padding = '15px 24px';
-							buyButton.style.fontSize = '18px';
-							buyButton.style.fontWeight = 'bold';
-							buyButton.style.width = '90%';
-							buyButton.style.margin = '0 auto';
-							buyButton.style.display = 'block';
-						}
-					}
-
-					// Inicializar o seletor de produtos
-					if (typeof productSelector !== 'undefined') {
-						try {
-							// Usar setTimeout para garantir que tudo esteja carregado e visível
-							setTimeout(() => {
-								productSelector.initializeDefaults();
-
-								// Garantir que o estado visual esteja correto
-								const pretoButton = document.querySelector('[onclick*="changeProductImage(\'preto\')"]');
-								const microondasButton = document.querySelector('[onclick*="changeBrindeImage(\'microondas\')"]');
-
-								// Adicionar ponto vermelho abaixo da opção preta
-								if (pretoButton) {
-									const buttonWrapper = pretoButton.closest('.elementor-button-wrapper');
-									if (buttonWrapper) {
-										buttonWrapper.classList.add('elementor-widget-active');
-									}
-								}
-
-								// Adicionar ponto vermelho abaixo da opção Micro-ondas
-								if (microondasButton) {
-									const buttonWrapper = microondasButton.closest('.elementor-button-wrapper');
-									if (buttonWrapper) {
-										buttonWrapper.classList.add('elementor-widget-active');
-									}
-								}
-
-								// Carregar as imagens correspondentes
-								const mainImage = document.getElementById('main-product-image');
-								if (mainImage) {
-									mainImage.src = 'images/airfryer-principal.png';
-								}
-
-								// Verificar se a imagem do brinde existe
-								let brindeImage = document.getElementById('brinde-preview-image');
-
-								// Se não existir, criar o elemento
-								if (!brindeImage) {
-									// Encontrar o container do brinde
-									const brindeContainer = document.querySelector('[data-id="7516f890"]');
-									if (brindeContainer) {
-										// Criar o elemento de imagem
-										const imageContainer = document.createElement('div');
-										imageContainer.className = 'elementor-widget-container';
-										imageContainer.style.textAlign = 'center';
-										imageContainer.style.padding = '10px 0';
-
-										brindeImage = document.createElement('img');
-										brindeImage.id = 'brinde-preview-image';
-										brindeImage.width = '180';
-										brindeImage.height = '180';
-										brindeImage.className = 'attachment-medium size-medium';
-										brindeImage.alt = 'Micro-ondas Compacto';
-										brindeImage.style.border = '1px solid #f0f0f0';
-										brindeImage.style.borderRadius = '8px';
-										brindeImage.style.padding = '5px';
-										brindeImage.style.backgroundColor = 'white';
-
-										imageContainer.appendChild(brindeImage);
-										brindeContainer.appendChild(imageContainer);
-									}
-								}
-
-								// Definir a imagem do brinde
-								if (brindeImage) {
-									brindeImage.src = 'https://imgs.casasbahia.com.br/55065338/1g.jpg';
-								}
-							}, 200);
-						} catch (e) {
-							console.error('Erro ao inicializar seletor de produtos:', e);
-						}
-					}
-
-					// Adicionar evento de fechamento ao fundo
-					overlay.addEventListener('click', function (e) {
-						if (e.target === overlay) {
-							hidePopup(popupId);
-						}
-					});
-
-					// Adicionar evento de fechamento aos botões de fechar
-					var closeButtons = popup.querySelectorAll('a[href*="popup:close"]');
-					closeButtons.forEach(function (button) {
-						button.addEventListener('click', function (e) {
-							e.preventDefault();
-							hidePopup(popupId);
-						});
-					});
-
-					// Adicionar suporte para tecla ESC
-					document.addEventListener('keydown', escKeyHandler);
-				}
-			}
-
-			// Função para garantir recursivamente que todos os elementos estejam visíveis
-			function recursiveForceVisibility(element) {
-				if (!element) return;
-
-				// Aplicar estilos de visibilidade ao elemento
-				element.style.visibility = 'visible';
-				element.style.opacity = '1';
-				if (element.style.display === 'none') {
-					element.style.display = element.tagName.toLowerCase() === 'div' ? 'block' : 'inline-block';
-				}
-
-				// Aplicar recursivamente a todos os filhos
-				var children = element.children;
-				if (children && children.length > 0) {
-					for (var i = 0; i < children.length; i++) {
-						recursiveForceVisibility(children[i]);
-					}
-				}
-			}
-
-			// Handler para tecla ESC
-			function escKeyHandler(e) {
-				if (e.key === 'Escape') {
-					var popup = document.querySelector('.elementor-popup-modal [data-elementor-id]');
-					if (popup) {
-						var popupId = popup.getAttribute('data-elementor-id');
-						hidePopup(popupId);
-					}
-				}
-			}
-
-			// Função para esconder o popup
-			function hidePopup(popupId) {
-				var popup = document.querySelector('[data-elementor-id="' + popupId + '"]');
-				var overlay = document.querySelector('.elementor-popup-modal');
-
-				if (popup && overlay) {
-					// Mover o popup de volta para o documento antes de remover o overlay
-					document.body.appendChild(popup);
-
-					// Esconder o popup
-					popup.style.display = 'none';
-					popup.style.visibility = 'hidden';
-					popup.style.opacity = '0';
-
-					// Remover o overlay
-					overlay.parentNode.removeChild(overlay);
-
-					// Restaurar scroll
-					document.documentElement.style.overflow = '';
-					document.body.style.overflow = '';
-
-					// Remover handler de ESC
-					document.removeEventListener('keydown', escKeyHandler);
-				}
-			}
-
-			// TODOS OS LINKS DE POPUP REDIRECIONAM PARA PRODUCT.HTML
-			document.querySelectorAll('a[href*="popup:open"], a.popup-trigger, a[href*="elementor-action%3Aaction%3Dpopup%3Aopen"]').forEach(function (button) {
-				button.addEventListener('click', function (e) {
-					e.preventDefault();
-					console.log('Link de popup redirecionado para product.html');
-					window.location.href = 'product.html';
-				});
-			});
-
-			// Redirecionar botões "Comprar agora" para a página de produto
-			var buyNowButtons = document.querySelectorAll('.barra-fixa-inferior .elementor-button, .sticky-butao .elementor-button');
-			buyNowButtons.forEach(function (button) {
-				// Verificar se o botão já tem um href para checkout
-				var href = button.getAttribute('href');
-				if (href && href.includes('checkout.vendeagora.com')) {
-					// Se já aponta para checkout, redirecionar para product.html
-					button.setAttribute('href', 'product.html');
-					console.log('Botão de compra redirecionado para product.html');
-				} else {
-					// Se não tem href ou é um link de popup, adicionar evento
-					button.addEventListener('click', function (e) {
-						e.preventDefault();
-						window.location.href = 'product.html';
-					});
-				}
-			});
-
-			// MODAL AUTOMÁTICO REMOVIDO - Agora os usuários vão para product.html
-			// O popup só será aberto quando o usuário clicar em um botão específico
-			console.log('Modal automático desabilitado. Usuários serão redirecionados para product.html');
-
-			// DESABILITAR COMPLETAMENTE A FUNÇÃO SHOWPOPUP
-			window.showPopup = function (popupId) {
-				console.log('Função showPopup desabilitada. Redirecionando para product.html');
-				window.location.href = 'product.html';
-				return false;
-			};
-
-			// Interceptar cliques em links que possam abrir popups
-			document.addEventListener('click', function (e) {
-				var target = e.target.closest('a');
-				if (target) {
-					var href = target.getAttribute('href') || '';
-					// Se o link tenta abrir um popup, redirecionar para product.html
-					if (href.includes('popup:open') || href.includes('elementor-action') ||
-						target.classList.contains('popup-trigger')) {
-						e.preventDefault();
-						console.log('Link de popup interceptado. Redirecionando para product.html');
-						window.location.href = 'product.html';
-					}
-				}
-			});
-		});
-
-		// REMOVER COMPLETAMENTE OS POPUPS DO DOM
-		document.addEventListener('DOMContentLoaded', function () {
-			// Remover todos os popups do DOM
-			var popups = document.querySelectorAll('[data-elementor-type="popup"]');
-			popups.forEach(function (popup) {
-				console.log('Removendo popup do DOM:', popup.getAttribute('data-elementor-id'));
-				popup.remove();
-			});
-
-			// Desabilitar qualquer overlay de popup
-			var overlays = document.querySelectorAll('.elementor-popup-modal, .elementor-popup-overlay');
-			overlays.forEach(function (overlay) {
-				overlay.remove();
-			});
-
-			console.log('✓ Todos os popups foram removidos do DOM');
-		});
-
-		// Script adicional para garantir que todos os botões de compra redirecionem para product.html
-		document.addEventListener('DOMContentLoaded', function () {
-			// Procurar por todos os possíveis botões de compra
-			var possibleBuyButtons = document.querySelectorAll(
-				'a[href*="checkout"], ' +
-				'a[href*="comprar"], ' +
-				'.elementor-button[href*="vendeagora"], ' +
-				'.buy-button, ' +
-				'.comprar-button, ' +
-				'[class*="buy"], ' +
-				'[class*="comprar"]'
-			);
-
-			possibleBuyButtons.forEach(function (button) {
-				var href = button.getAttribute('href');
-				if (href && (href.includes('checkout') || href.includes('vendeagora'))) {
-					console.log('Botão de compra encontrado e redirecionado:', button);
-					button.setAttribute('href', 'product.html');
-				}
-			});
-
-			// Procurar por botões com texto "Comprar"
-			var allButtons = document.querySelectorAll('a, button');
-			allButtons.forEach(function (button) {
-				var text = button.textContent || button.innerText || '';
-				if (text.toLowerCase().includes('comprar') || text.toLowerCase().includes('buy')) {
-					console.log('Botão com texto de compra encontrado:', button);
-					button.addEventListener('click', function (e) {
-						e.preventDefault();
-						window.location.href = 'product.html';
-					});
-				}
-			});
-
-			console.log('✓ Todos os botões de compra foram redirecionados para product.html');
-		});
-
-		// INTERCEPTAR TODOS OS CLIQUES E REDIRECIONAR AÇÕES DE COMPRA
-		document.addEventListener('click', function (e) {
-			var target = e.target;
-			var closest = target.closest ? target.closest('a, button, [onclick], [data-elementor-open-lightbox]') : null;
-
-			if (closest) {
-				var text = (closest.textContent || closest.innerText || '').toLowerCase();
-				var href = closest.getAttribute('href') || '';
-				var onclick = closest.getAttribute('onclick') || '';
-				var classes = closest.className || '';
-
-				// Se contém palavras relacionadas a compra ou popup
-				if (text.includes('comprar') || text.includes('buy') ||
-					href.includes('popup') || href.includes('checkout') ||
-					onclick.includes('popup') || onclick.includes('showPopup') ||
-					classes.includes('popup') || classes.includes('buy')) {
-
-					e.preventDefault();
-					e.stopPropagation();
-					e.stopImmediatePropagation();
-
-					console.log('Clique interceptado e redirecionado para product.html:', {
-						text: text,
-						href: href,
-						onclick: onclick,
-						classes: classes
-					});
-
-					window.location.href = 'product.html';
-					return false;
-				}
-			}
-		}, true); // Use capture phase para interceptar antes de outros handlers
-
-		// INTERCEPTAR QUALQUER TENTATIVA DE CRIAR POPUPS
-		(function () {
-			// Sobrescrever métodos que possam criar popups
-			var originalCreateElement = document.createElement;
-			document.createElement = function (tagName) {
-				var element = originalCreateElement.call(document, tagName);
-
-				// Se tentar criar um elemento de popup, redirecionar
-				if (element.setAttribute) {
-					var originalSetAttribute = element.setAttribute;
-					element.setAttribute = function (name, value) {
-						if (name === 'data-elementor-type' && value === 'popup') {
-							console.log('Tentativa de criar popup interceptada. Redirecionando...');
-							window.location.href = 'product.html';
-							return;
-						}
-						return originalSetAttribute.call(this, name, value);
-					};
-				}
-
-				return element;
-			};
-
-			// Interceptar qualquer função que tente mostrar elementos
-			var originalShow = HTMLElement.prototype.show;
-			if (originalShow) {
-				HTMLElement.prototype.show = function () {
-					if (this.getAttribute('data-elementor-type') === 'popup') {
-						console.log('Tentativa de mostrar popup interceptada');
-						window.location.href = 'product.html';
-						return;
-					}
-					return originalShow.call(this);
-				};
-			}
-
-			// Interceptar mudanças de estilo que possam mostrar popups
-			var originalSetProperty = CSSStyleDeclaration.prototype.setProperty;
-			CSSStyleDeclaration.prototype.setProperty = function (property, value, priority) {
-				if (this.parentElement && this.parentElement.getAttribute('data-elementor-type') === 'popup') {
-					if (property === 'display' && value !== 'none') {
-						console.log('Tentativa de mostrar popup via CSS interceptada');
-						window.location.href = 'product.html';
-						return;
-					}
-				}
-				return originalSetProperty.call(this, property, value, priority);
-			};
-		})();
-
-								// CORRIGIR FUNCIONAMENTO DO SLIDER DE PRODUTOS
-						window.addEventListener('load', function () {
-							// Inicializar o slider de produtos
-							var carousel = document.querySelector('.e-n-carousel.swiper');
-							if (carousel) {
-								console.log('Slider de produtos encontrado, verificando funcionamento...');
-
-								// Verificar se o Swiper está funcionando
-								var swiperWrapper = carousel.querySelector('.swiper-wrapper');
-								var slides = carousel.querySelectorAll('.swiper-slide');
-
-								if (swiperWrapper && slides.length > 0) {
-									console.log('✓ Slider tem', slides.length, 'slides');
-
-									// Garantir que as imagens estejam carregadas
-									slides.forEach(function (slide, index) {
-										var img = slide.querySelector('img');
-										if (img) {
-											img.style.maxWidth = '100%';
-											img.style.height = 'auto';
-											img.style.display = 'block';
-											img.style.visibility = 'visible';
-											img.style.opacity = '1';
-
-											// Garantir que a imagem seja carregada
-											if (!img.complete) {
-												img.onload = function () {
-													console.log('✓ Imagem carregada:', this.alt);
-												};
-											}
-
-											console.log('✓ Slide', index + 1, 'configurado:', img.alt);
-										}
-									});
-
-									// Verificar se o autoplay está funcionando e forçar o slide 1
-									setTimeout(function () {
-										if (carousel.swiper) {
-											console.log('✓ Swiper ativo, autoplay:', carousel.swiper.autoplay);
-											
-											// FORÇAR SEMPRE COMEÇAR NO SLIDE 1
-											carousel.swiper.slideTo(0, 0); // slideTo(index, speed)
-											console.log('✓ Forçado a começar no slide 1');
-											
-											// Forçar início do autoplay se necessário
-											if (carousel.swiper.autoplay && !carousel.swiper.autoplay.running) {
-												carousel.swiper.autoplay.start();
-												console.log('✓ Autoplay iniciado manualmente');
-											}
-										}
-									}, 1000);
-
-									// Se o Swiper não estiver inicializado, tentar inicializar manualmente
-									if (!carousel.swiper && window.Swiper) {
-						try {
-							var swiper = new Swiper(carousel, {
-								slidesPerView: 1,
-								spaceBetween: 0,
-								autoplay: {
-									delay: 5000,
-									disableOnInteraction: false,
-								},
-								pagination: {
-									el: '.swiper-pagination',
-									clickable: true,
-								},
-								loop: true,
-								speed: 500,
-								breakpoints: {
-									768: {
-										slidesPerView: 2,
-									}
-								}
-							});
-							console.log('✓ Swiper inicializado manualmente');
-						} catch (e) {
-							console.warn('Erro ao inicializar Swiper:', e);
-							// Fallback: criar slider simples
-							createSimpleSlider(carousel, slides);
-						}
-					} else if (!carousel.swiper) {
-						// Se Swiper não estiver disponível, criar slider simples
-						console.log('Swiper não disponível, criando slider simples...');
-						createSimpleSlider(carousel, slides);
-					}
-				}
-			} else {
-				console.warn('Slider de produtos não encontrado');
-			}
-		});
-
-		// Função para criar slider simples como fallback
-		function createSimpleSlider(carousel, slides) {
-			var currentSlide = 0;
-			var totalSlides = slides.length;
-
-			if (totalSlides === 0) return;
-
-			console.log('Criando slider simples com', totalSlides, 'slides');
-
-			// Esconder todos os slides exceto o primeiro
-			slides.forEach(function (slide, index) {
-				slide.style.display = index === 0 ? 'block' : 'none';
-			});
-
-			// Criar paginação se não existir
-			var pagination = carousel.querySelector('.swiper-pagination');
-			if (!pagination) {
-				pagination = document.createElement('div');
-				pagination.className = 'swiper-pagination';
-				carousel.appendChild(pagination);
-			}
-
-			// Criar bullets de paginação
-			pagination.innerHTML = '';
-			for (var i = 0; i < totalSlides; i++) {
-				var bullet = document.createElement('span');
-				bullet.className = 'swiper-pagination-bullet' + (i === 0 ? ' swiper-pagination-bullet-active' : '');
-				bullet.setAttribute('data-slide', i);
-				bullet.addEventListener('click', function () {
-					goToSlide(parseInt(this.getAttribute('data-slide')));
-				});
-				pagination.appendChild(bullet);
-			}
-
-			// Função para ir para um slide específico
-			function goToSlide(slideIndex) {
-				// Esconder slide atual
-				slides[currentSlide].style.display = 'none';
-
-				// Mostrar novo slide
-				currentSlide = slideIndex;
-				slides[currentSlide].style.display = 'block';
-
-				// Atualizar paginação
-				var bullets = pagination.querySelectorAll('.swiper-pagination-bullet');
-				bullets.forEach(function (bullet, index) {
-					bullet.classList.toggle('swiper-pagination-bullet-active', index === currentSlide);
-				});
-
-				console.log('Slide alterado para:', currentSlide + 1);
-			}
-
-			// Função para próximo slide
-			function nextSlide() {
-				var nextIndex = (currentSlide + 1) % totalSlides;
-				goToSlide(nextIndex);
-			}
-
-			// Iniciar autoplay
-			var autoplayInterval = setInterval(nextSlide, 5000);
-
-			// Pausar autoplay ao passar o mouse
-			carousel.addEventListener('mouseenter', function () {
-				clearInterval(autoplayInterval);
-			});
-
-			// Retomar autoplay ao sair o mouse
-			carousel.addEventListener('mouseleave', function () {
-				autoplayInterval = setInterval(nextSlide, 5000);
-			});
-
-			console.log('✓ Slider simples criado e funcionando');
-		}
-
-		// Verificar se todas as imagens do slider estão carregando
-		document.addEventListener('DOMContentLoaded', function () {
-			var sliderImages = document.querySelectorAll('.e-n-carousel img');
-			console.log('Verificando', sliderImages.length, 'imagens do slider...');
-
-			sliderImages.forEach(function (img, index) {
-				if (img.complete) {
-					console.log('✓ Imagem', index + 1, 'já carregada:', img.alt);
-				} else {
-					img.onload = function () {
-						console.log('✓ Imagem', index + 1, 'carregada:', this.alt);
-					};
-					img.onerror = function () {
-						console.error('✗ Erro ao carregar imagem', index + 1, ':', this.src);
-					};
-				}
-			});
-		});
-
-		// DESABILITAR SISTEMA DE POPUPS DO ELEMENTOR
-		window.addEventListener('load', function () {
-			// Desabilitar qualquer sistema de popup do Elementor
-			if (window.elementorFrontend) {
-				window.elementorFrontend.modules = window.elementorFrontend.modules || {};
-				if (window.elementorFrontend.modules.popup) {
-					window.elementorFrontend.modules.popup = {
-						showModal: function () {
-							console.log('Popup do Elementor desabilitado');
-							window.location.href = 'product.html';
-						},
-						closeModal: function () { },
-						onInit: function () { }
-					};
-				}
-			}
-
-			// Desabilitar qualquer trigger de popup
-			if (window.elementorProFrontend) {
-				window.elementorProFrontend.modules = window.elementorProFrontend.modules || {};
-				if (window.elementorProFrontend.modules.popup) {
-					window.elementorProFrontend.modules.popup = {
-						showModal: function () {
-							console.log('Popup Pro do Elementor desabilitado');
-							window.location.href = 'product.html';
-						}
-					};
-				}
-			}
-		});
-	</script>
 
 </body>
 
-</html>
+</html><!-- Page cached by LiteSpeed Cache 7.2 on 2025-07-21 02:43:11 -->

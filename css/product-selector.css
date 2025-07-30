@@ -1,0 +1,169 @@
+/* Estilos para o sistema de seleção única */
+
+/* Forçar layout horizontal para os botões das cores */
+.elementor-element[data-id="571a5629"] {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: flex-start !important;
+}
+
+/* Forçar layout horizontal para os botões das brindes */
+.elementor-element[data-id="571a5630"] {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: flex-start !important;
+}
+
+/* Estilo base para TODOS os botões - Cores e Brindes */
+.elementor-element[data-id="571a5630"] .elementor-button,
+.elementor-element[data-id="571a5629"] .elementor-button {
+    background-color: #f0f0f0 !important; /* Estado padrão: fundo cinza claro */
+    color: #aaaaaa !important; /* Estado padrão: texto cinza claro */
+    border: 1px solid #e0e0e0 !important;
+    transition: all 0.2s ease-in-out !important;
+    padding: 12px 20px !important;
+    border-radius: 6px !important;
+    box-shadow: none !important;
+    font-weight: normal !important;
+    font-size: 16px !important;
+    text-align: center !important;
+    min-width: 100px !important;
+}
+
+/* Estado hover para ambas as seções */
+.elementor-element[data-id="571a5630"] .elementor-button:hover,
+.elementor-element[data-id="571a5629"] .elementor-button:hover {
+    background-color: #f8f8f8 !important;
+    border-color: #ff4757 !important;
+    color: #ff4757 !important;
+    transform: none !important; /* Sem elevação no hover */
+    box-shadow: none !important;
+}
+
+/* Estado ativo/selecionado para ambas as seções */
+.elementor-element[data-id="571a5630"] .elementor-widget-active .elementor-button,
+.elementor-element[data-id="571a5629"] .elementor-widget-active .elementor-button {
+    background-color: #ffffff !important; /* Estado selecionado: fundo branco */
+    border-color: #ff4757 !important; /* Estado selecionado: borda vermelha */
+    color: #ff4757 !important; /* Estado selecionado: texto vermelho */
+    font-weight: normal !important;
+    box-shadow: none !important;
+    position: relative !important;
+    transform: none !important; /* Sem elevação */
+}
+
+/* Removido código do ponto indicador vermelho */
+
+/* Estado para botões não ativos - sobrescreve o estilo base */
+.elementor-element[data-id="571a5630"] .elementor-widget-button:not(.elementor-widget-active) .elementor-button,
+.elementor-element[data-id="571a5629"] .elementor-widget-button:not(.elementor-widget-active) .elementor-button {
+    background-color: #f0f0f0 !important; /* Não selecionado: fundo cinza claro */
+    color: #aaaaaa !important; /* Não selecionado: texto cinza claro */
+    border: 1px solid #e0e0e0 !important;
+    box-shadow: none !important;
+}
+
+/* Estado processando para ambas as seções */
+.elementor-element[data-id="571a5630"] .processing .elementor-button,
+.elementor-element[data-id="571a5629"] .processing .elementor-button {
+    background-color: #f8f8f8 !important;
+    color: #999999 !important;
+    border-color: #cccccc !important;
+    cursor: wait !important;
+    opacity: 0.8 !important;
+}
+
+/* Espaçamento entre botões */
+.elementor-element[data-id="571a5630"] .elementor-widget-button,
+.elementor-element[data-id="571a5629"] .elementor-widget-button {
+    margin: 0 4px 8px 0 !important;
+}
+
+/* Estilo para a imagem de pré-visualização da brinde */
+#brinde-preview-image {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 300px !important;
+    max-height: 300px !important;
+    object-fit: contain !important;
+    display: block !important;
+    margin: 0 auto !important;
+    transition: opacity 0.3s ease-in-out !important;
+    border-radius: 4px !important;
+    background-color: #ffffff !important;
+}
+
+/* Estilo para o container da imagem de pré-visualização da brinde */
+.brinde-preview-container {
+    width: 100% !important;
+    padding: 10px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow: hidden !important;
+    background-color: #ffffff !important;
+    border-radius: 4px !important;
+    margin-bottom: 15px !important;
+}
+
+/* Estilo para o container da imagem principal do produto */
+.main-product-container {
+    width: 100% !important;
+    padding: 10px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow: hidden !important;
+    background-color: #ffffff !important;
+    border-radius: 4px !important;
+    margin-bottom: 15px !important;
+}
+
+/* Estilo para a imagem principal do produto */
+#main-product-image {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 300px !important;
+    max-height: 300px !important;
+    object-fit: contain !important;
+    display: block !important;
+    margin: 0 auto !important;
+    transition: opacity 0.3s ease-in-out !important;
+    border-radius: 4px !important;
+    background-color: #ffffff !important;
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 768px) {
+    #brinde-preview-image,
+    #main-product-image {
+        max-width: 250px !important;
+        max-height: 250px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    #brinde-preview-image,
+    #main-product-image {
+        max-width: 200px !important;
+        max-height: 200px !important;
+    }
+}
+
+/* Estilo para imagens durante carregamento */
+.image-loading {
+    opacity: 0.7;
+}
+
+/* Animação de transição para seleções */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.elementor-widget-button.elementor-widget-active {
+    animation: pulse 0.3s ease-in-out;
+}

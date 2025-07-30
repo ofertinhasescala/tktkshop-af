@@ -1,0 +1,1333 @@
+/* ===== PRODUCT PAGE STYLES ===== */
+/* 
+ * CSS específico para a página de produto
+ * Inclui estilos responsivos e otimizações de performance
+ * Versão: 1.0
+ */
+
+/* ===== CSS VARIABLES ===== */
+:root {
+    /* Cores principais */
+    --primary-color: #ff4757;
+    --primary-dark: #ff3742;
+    --primary-darker: #ff2635;
+    --success-color: #27ae60;
+    --success-dark: #229954;
+    --text-color: #2c3e50;
+    --text-light: #666;
+    --text-muted: #999;
+    --background-light: #f8f9fa;
+    --background-white: #ffffff;
+    --border-light: #e9ecef;
+    --border-color: #e0e0e0;
+
+    /* Espaçamentos */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 12px;
+    --spacing-lg: 16px;
+    --spacing-xl: 20px;
+    --spacing-xxl: 24px;
+
+    /* Bordas */
+    --border-radius-sm: 8px;
+    --border-radius-md: 12px;
+    --border-radius-lg: 16px;
+    --border-radius-xl: 20px;
+
+    /* Sombras */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.05);
+    --shadow-lg: 0 4px 15px rgba(0, 0, 0, 0.08);
+    --shadow-primary: 0 4px 15px rgba(255, 71, 87, 0.4);
+
+    /* Transições */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+
+    /* Tamanhos de fonte */
+    --font-xs: 10px;
+    --font-sm: 12px;
+    --font-md: 14px;
+    --font-lg: 16px;
+    --font-xl: 18px;
+    --font-xxl: 20px;
+    --font-price: 28px;
+    --font-price-lg: 32px;
+}
+
+/* Container principal */
+.product-page-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: var(--background-white);
+    min-height: 100vh;
+    box-shadow: var(--shadow-lg);
+}
+
+/* ===== LAYOUT SECTIONS ===== */
+
+/* Header fixo */
+.product-header {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    min-height: 20px;
+}
+
+/* Seção hero - Imagem + Preço + Descrição */
+.product-hero-section {
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    background: white;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+}
+
+.hero-container {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.product-image-container {
+    flex-shrink: 0;
+    width: 140px;
+}
+
+.product-info-container {
+    flex: 1;
+    min-width: 0;
+}
+
+.product-price-container {
+    margin-bottom: 15px;
+}
+
+.product-title-container {
+    margin-top: 10px;
+}
+
+.main-price {
+    display: flex;
+    align-items: baseline;
+    gap: 3px;
+    margin-bottom: 8px;
+    line-height: 1;
+    justify-content: flex-start;
+}
+
+.currency {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff4757;
+}
+
+.price-value {
+    font-size: 32px;
+    font-weight: 900;
+    color: #ff4757;
+    text-shadow: 0 1px 2px rgba(255, 71, 87, 0.2);
+}
+
+.price-unit {
+    font-size: 18px;
+    margin-left: 6px;
+    opacity: 0.8;
+}
+
+.price-details {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.shipping-info {
+    background: linear-gradient(135deg, rgba(76, 175, 80, 0.15) 0%, rgba(76, 175, 80, 0.05) 100%);
+    color: #2e7d32;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+    border: 1px solid rgba(76, 175, 80, 0.2);
+    box-shadow: 0 1px 4px rgba(76, 175, 80, 0.1);
+}
+
+.original-price {
+    font-size: 16px;
+    color: #999;
+    text-decoration: line-through;
+    font-weight: 500;
+    position: relative;
+}
+
+.original-price::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #999;
+    transform: translateY(-50%);
+}
+
+.discount-badge {
+    background: linear-gradient(135deg, #ff4757 0%, #ff3742 100%);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(255, 71, 87, 0.3);
+    animation: pulse-discount 2s infinite;
+}
+
+@keyframes pulse-discount {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+
+
+/* ===== MAIN CONTENT ===== */
+.product-main {
+    padding: 20px;
+}
+
+/* Imagem do produto no hero */
+.main-product-image {
+    width: 100%;
+    max-width: 140px;
+    height: auto;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    border-radius: 8px;
+}
+
+.main-product-image:hover {
+    transform: scale(1.05);
+}
+
+.main-product-image.image-loading {
+    opacity: 0.7;
+}
+
+/* Título do produto */
+.product-title {
+    font-size: 14px;
+    line-height: 1.3;
+    color: #666;
+    margin: 0;
+    font-weight: 500;
+    text-align: left;
+}
+
+.stock-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+    color: white;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: bold;
+    margin-left: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    box-shadow: 0 1px 3px rgba(231, 76, 60, 0.3);
+    animation: blink-stock 2s infinite;
+}
+
+@keyframes blink-stock {
+
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+
+    25%,
+    75% {
+        opacity: 0.7;
+    }
+}
+
+/* ===== SELECTION SECTIONS ===== */
+.color-selection-section,
+.brinde-selection-section {
+    margin-bottom: 35px;
+    padding: 20px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    border-radius: 16px;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.selection-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.title-icon {
+    font-size: 22px;
+    animation: rotate-icon 3s ease-in-out infinite;
+}
+
+@keyframes rotate-icon {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-5deg);
+    }
+
+    75% {
+        transform: rotate(5deg);
+    }
+}
+
+/* Opções de cor */
+.color-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.color-options .elementor-widget {
+    flex: 0 0 auto;
+}
+
+.color-button {
+    background-color: white;
+    border: 2px solid #e0e0e0;
+    color: #495057;
+    padding: 12px 16px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.color-button:hover {
+    border-color: #ff4757;
+    color: #ff4757;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 71, 87, 0.2);
+}
+
+.elementor-widget-active .color-button {
+    background: linear-gradient(135deg, #ff4757 0%, #ff3742 100%);
+    border-color: #ff4757;
+    color: white;
+    box-shadow: 0 4px 15px rgba(255, 71, 87, 0.4);
+    transform: translateY(-1px);
+}
+
+.elementor-widget-active .color-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 71, 87, 0.5);
+}
+
+/* Indicadores de cor */
+.color-indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.color-red {
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+}
+
+.color-blue {
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+}
+
+.color-green {
+    background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+}
+
+.color-white {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border-color: #dee2e6;
+}
+
+.color-black {
+    background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%);
+}
+
+.elementor-widget-active .color-indicator {
+    border-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+/* Helper text */
+.selection-helper {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.helper-text {
+    font-size: 12px;
+    color: #6c757d;
+    font-style: italic;
+    background-color: rgba(108, 117, 125, 0.1);
+    padding: 8px 16px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+/* Preview do brinde */
+.brinde-preview {
+    text-align: center;
+    margin-bottom: 25px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 16px;
+    border: 2px solid #dee2e6;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.preview-header {
+    background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+    color: white;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.preview-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.preview-container {
+    position: relative;
+    padding: 25px;
+    background: radial-gradient(circle at center, #ffffff 0%, #f8f9fa 100%);
+}
+
+.brinde-image {
+    max-width: 200px;
+    height: auto;
+    transition: all 0.4s ease;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+.brinde-image:hover {
+    transform: scale(1.05) rotate(1deg);
+}
+
+.brinde-image.image-loading {
+    opacity: 0.6;
+    transform: scale(0.95);
+    filter: blur(1px);
+}
+
+
+
+/* Opções de brinde */
+.brinde-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.brinde-options .elementor-widget {
+    flex: 0 0 auto;
+}
+
+.brinde-button {
+    background-color: white;
+    border: 2px solid #e0e0e0;
+    color: #495057;
+    padding: 12px 10px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.brinde-button:hover {
+    border-color: #ff4757;
+    color: #ff4757;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 71, 87, 0.2);
+}
+
+.elementor-widget-active .brinde-button {
+    background: linear-gradient(135deg, #ff4757 0%, #ff3742 100%);
+    border-color: #ff4757;
+    color: white;
+    box-shadow: 0 4px 15px rgba(255, 71, 87, 0.4);
+    transform: translateY(-1px);
+}
+
+.elementor-widget-active .brinde-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 71, 87, 0.5);
+}
+
+/* Indicadores de marca */
+.brand-indicator {
+    font-size: 20px;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
+}
+
+.elementor-widget-active .brand-indicator {
+    transform: scale(1.2);
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.coca-brand {
+    animation: bubble-float 2s ease-in-out infinite;
+}
+
+.sedex-brand {
+    animation: package-shake 3s ease-in-out infinite;
+}
+
+.heineken-brand {
+    animation: beer-tilt 2.5s ease-in-out infinite;
+}
+
+.skol-brand {
+    animation: beer-bounce 2s ease-in-out infinite;
+}
+
+.casas-brand {
+    animation: house-glow 3s ease-in-out infinite;
+}
+
+@keyframes bubble-float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-3px);
+    }
+}
+
+@keyframes package-shake {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-2deg);
+    }
+
+    75% {
+        transform: rotate(2deg);
+    }
+}
+
+@keyframes beer-tilt {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(-5deg);
+    }
+}
+
+@keyframes beer-bounce {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes house-glow {
+
+    0%,
+    100% {
+        filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
+    }
+
+    50% {
+        filter: drop-shadow(0 2px 8px rgba(255, 193, 7, 0.4));
+    }
+}
+
+/* ===== FOOTER SECTION ===== */
+.product-footer {
+    padding: 20px;
+    background-color: white;
+    border-top: 1px solid #f0f0f0;
+    position: sticky;
+    bottom: 0;
+    z-index: 100;
+}
+
+.purchase-section {
+    text-align: center;
+}
+
+.buy-now-button {
+    background: linear-gradient(135deg, #ff4757 0%, #ff3742 100%);
+    color: white;
+    padding: 16px 32px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 15px rgba(255, 71, 87, 0.4);
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.buy-now-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 71, 87, 0.5);
+    background: linear-gradient(135deg, #ff3742 0%, #ff2635 100%);
+}
+
+.buy-now-button:active {
+    transform: translateY(0);
+}
+
+.buy-now-button.purchasing {
+    background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+    box-shadow: 0 4px 15px rgba(39, 174, 96, 0.4);
+    animation: pulse-purchase 1s infinite;
+}
+
+.buy-now-button.purchasing:hover {
+    background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+    transform: translateY(-2px);
+}
+
+@keyframes pulse-purchase {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.02);
+    }
+}
+
+.button-text {
+    display: block;
+}
+
+/* Melhorias de acessibilidade para o botão de compra */
+.buy-now-button:focus {
+    outline: 3px solid #ff4757;
+    outline-offset: 2px;
+}
+
+.buy-now-button:focus-visible {
+    outline: 3px solid #ff4757;
+    outline-offset: 2px;
+}
+
+/* Estado desabilitado (se necessário) */
+.buy-now-button:disabled,
+.buy-now-button.disabled {
+    background: #ccc;
+    color: #666;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.buy-now-button:disabled:hover,
+.buy-now-button.disabled:hover {
+    background: #ccc;
+    transform: none;
+    box-shadow: none;
+}
+
+/* Animação de loading para o botão */
+@keyframes button-loading {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+.buy-now-button.loading {
+    background: linear-gradient(90deg, var(--primary-color), var(--primary-dark), var(--primary-color));
+    background-size: 200% 100%;
+    animation: button-loading 1.5s infinite;
+}
+
+/* ===== PERFORMANCE OPTIMIZATIONS ===== */
+
+/* Otimização de renderização */
+.product-page-container {
+    contain: layout style paint;
+}
+
+.main-product-image,
+.brinde-image {
+    will-change: transform, opacity;
+}
+
+.color-button,
+.brinde-button,
+.buy-now-button {
+    will-change: transform;
+}
+
+/* Preload de fontes críticas */
+.product-title,
+.price-value,
+.buy-now-button {
+    font-display: swap;
+}
+
+/* Otimização de scroll */
+.product-header {
+    contain: layout style;
+}
+
+.product-footer {
+    contain: layout style;
+}
+
+/* Redução de repaints */
+.elementor-widget-active {
+    transform: translateZ(0);
+}
+
+.processing {
+    transform: translateZ(0);
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+    .product-page-container {
+        box-shadow: none;
+        max-width: 100%;
+    }
+
+    .product-header,
+    .product-footer {
+        position: static;
+    }
+
+    .buy-now-button {
+        display: none;
+    }
+
+    .color-selection-section,
+    .brinde-selection-section {
+        page-break-inside: avoid;
+    }
+}
+
+/* ===== HIGH CONTRAST MODE ===== */
+@media (prefers-contrast: high) {
+    .product-page-container {
+        border: 2px solid;
+    }
+
+    .buy-now-button {
+        border: 2px solid;
+    }
+
+    .color-indicator,
+    .brand-indicator {
+        border: 2px solid;
+    }
+}
+
+/* ===== REDUCED MOTION ===== */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .main-product-image:hover,
+    .brinde-image:hover {
+        transform: none;
+    }
+
+    .buy-now-button:hover {
+        transform: none;
+    }
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.elementor-widget.processing {
+    animation: pulse 0.3s ease-in-out;
+}
+
+/* Efeito de loading para mudança de cor */
+.color-options .elementor-widget.processing .color-button {
+    opacity: 0.7;
+    transform: scale(0.98);
+    pointer-events: none;
+}
+
+.color-options .elementor-widget.processing .color-indicator {
+    animation: spin-color 0.8s linear infinite;
+}
+
+/* Efeito de loading para mudança de brinde */
+.brinde-options .elementor-widget.processing .brinde-button {
+    opacity: 0.7;
+    transform: scale(0.98);
+    pointer-events: none;
+}
+
+.brinde-options .elementor-widget.processing .brand-indicator {
+    animation: spin-brand 0.8s linear infinite;
+}
+
+@keyframes spin-color {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin-brand {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Efeito ripple para botões */
+.ripple-effect {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(0);
+    animation: ripple 0.6s linear;
+    pointer-events: none;
+}
+
+@keyframes ripple {
+    to {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 480px) {
+    .product-page-container {
+        max-width: 100%;
+        box-shadow: none;
+    }
+
+    .product-header {
+        padding: 8px 15px;
+    }
+
+    .product-main,
+    .product-footer {
+        padding: 15px;
+    }
+
+    .product-hero-section {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .hero-container {
+        gap: 12px;
+    }
+
+    .product-image-container {
+        width: 150px;
+    }
+
+    .main-product-image {
+        max-width: 150px;
+    }
+
+    .price-value {
+        font-size: 24px;
+    }
+
+    .currency {
+        font-size: 16px;
+    }
+
+    .product-title {
+        font-size: 12px;
+    }
+
+    .shipping-info {
+        font-size: 11px;
+        padding: 4px 8px;
+    }
+
+    .stock-badge {
+        font-size: 11px;
+        padding: 3px 8px;
+        margin-left: 6px;
+    }
+
+    .price-details {
+        gap: 8px;
+    }
+
+    .discount-badge {
+        font-size: 13px;
+        padding: 5px 10px;
+    }
+
+
+
+    .color-selection-section,
+    .brinde-selection-section {
+        padding: 15px;
+        margin-bottom: 25px;
+    }
+
+    .selection-title {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .title-icon {
+        font-size: 20px;
+    }
+
+    .color-options {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 8px;
+    }
+
+    .brinde-preview {
+        margin-bottom: 20px;
+    }
+
+    .preview-header {
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+
+    .preview-container {
+        padding: 20px;
+    }
+
+    .brinde-image {
+        max-width: 160px;
+    }
+
+    .brinde-options {
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+        gap: 8px;
+    }
+
+    .color-button {
+        padding: 10px 12px;
+        font-size: 13px;
+        gap: 8px;
+    }
+
+    .brinde-button {
+        padding: 10px 8px;
+        font-size: 11px;
+        gap: 4px;
+    }
+
+    .brand-indicator {
+        font-size: 16px;
+    }
+
+    .color-indicator {
+        width: 16px;
+        height: 16px;
+    }
+
+    .helper-text {
+        font-size: 11px;
+        padding: 6px 12px;
+    }
+
+    .buy-now-button {
+        font-size: 16px;
+        padding: 14px 24px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .product-page-container {
+        max-width: 450px;
+    }
+}
+
+/* ===== ACCESSIBILITY ===== */
+.color-button:focus,
+.brinde-button:focus,
+.buy-now-button:focus {
+    outline: 2px solid #ff4757;
+    outline-offset: 2px;
+}
+
+/* Estados de loading */
+.image-loading {
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.main-product-image.image-loading {
+    opacity: 0.7;
+}
+
+.brinde-image.image-loading {
+    opacity: 0.6;
+    transform: scale(0.95);
+    filter: blur(1px);
+}
+
+/* Compatibilidade com sistema existente */
+.elementor-widget-button a {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Garantir que elementos sejam visíveis */
+.elementor-widget,
+.elementor-widget-container {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* ===== ADDITIONAL ENHANCEMENTS ===== */
+
+
+
+/* Animação de entrada para elementos */
+.product-page-container {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Efeito de loading suave */
+.product-page-container::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #ff4757, #ff3742, #ff4757);
+    background-size: 200% 100%;
+    animation: loading-bar 2s ease-in-out;
+    z-index: 1000;
+}
+
+@keyframes loading-bar {
+    0% {
+        background-position: 200% 0;
+        opacity: 1;
+    }
+
+    100% {
+        background-position: -200% 0;
+        opacity: 0;
+    }
+}
+
+/* Melhorias de acessibilidade */
+.main-price:focus-within,
+.price-details:focus-within {
+    outline: 2px solid #ff4757;
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+/* Estados de hover melhorados */
+.discount-badge:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+}
+
+
+
+.stock-badge:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+/* ===== COLOR SELECTION ENHANCEMENTS ===== */
+
+/* Efeito de seleção com animação */
+.color-options .elementor-widget,
+.brinde-options .elementor-widget {
+    transition: all 0.3s ease;
+}
+
+.color-options .elementor-widget:hover,
+.brinde-options .elementor-widget:hover {
+    transform: scale(1.02);
+}
+
+.color-options .elementor-widget.elementor-widget-active,
+.brinde-options .elementor-widget.elementor-widget-active {
+    animation: selected-bounce 0.5s ease-out;
+}
+
+@keyframes selected-bounce {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Efeito de loading para mudança de cor */
+.color-options .elementor-widget.processing .color-button {
+    opacity: 0.7;
+    transform: scale(0.98);
+    pointer-events: none;
+}
+
+.color-options .elementor-widget.processing .color-indicator {
+    animation: spin-color 0.8s linear infinite;
+}
+
+/* Efeito de loading para mudança de brinde */
+.brinde-options .elementor-widget.processing .brinde-button {
+    opacity: 0.7;
+    transform: scale(0.98);
+    pointer-events: none;
+}
+
+.brinde-options .elementor-widget.processing .brand-indicator {
+    animation: spin-brand 0.8s linear infinite;
+}
+
+@keyframes spin-color {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin-brand {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Feedback visual para seleção */
+.color-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+.elementor-widget-active .color-button::before {
+    left: 100%;
+}
+
+/* Indicador de cor selecionada */
+.elementor-widget-active .color-button::after {
+    content: '✓';
+    position: absolute;
+    top: 4px;
+    right: 6px;
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Indicador de brinde selecionada */
+.elementor-widget-active .brinde-button::after {
+    content: '✓';
+    position: absolute;
+    top: 4px;
+    right: 6px;
+    font-size: 10px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Melhorias de acessibilidade */
+.color-button:focus,
+.brinde-button:focus {
+    outline: 3px solid #ff4757;
+    outline-offset: 2px;
+    border-radius: 12px;
+}
+
+/* Efeito shimmer para botões de brinde */
+.brinde-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+/* Botões desabilitados */
+.botao-desabilitado {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.botao-desabilitado .brinde-button {
+    background-color: #F2F2F2 !important;
+    color: #CACFD8 !important;
+    border-color: #F2F2F2 !important;
+    cursor: not-allowed;
+}
+
+.elementor-widget-active .brinde-button::before {
+    left: 100%;
+}
+
+/* Efeito de preview atualizado */
+.brinde-preview.updating {
+    transform: scale(0.98);
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.brinde-preview.updating .brinde-image {
+    filter: blur(2px) drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+/* Efeito hover no helper text */
+.helper-text:hover {
+    background-color: rgba(108, 117, 125, 0.15);
+    transform: scale(1.02);
+    transition: all 0.2s ease;
+}
